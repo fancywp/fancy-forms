@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'fancyforms-icons';
+    src:
+        url('fancyforms-icons/fancyforms-icons.ttf') format('truetype'),
+        url('fancyforms-icons/fancyforms-icons.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.fancyformsicon {
+    font-family: 'fancyforms-icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fancyformsicon.fancyformsicon-form:before {
+  content: "\e91c";
+}
+
+.fancyformsicon.fancyformsicon-phone:before {
+    content: "\e900";
+}
+.fancyformsicon.fancyformsicon-email:before {
+    content: "\e901";
+}
+.fancyformsicon.fancyformsicon-name:before {
+    content: "\e902";
+}
+.fancyformsicon.fancyformsicon-heading:before {
+    content: "\e903";
+}
+.fancyformsicon.fancyformsicon-image:before {
+    content: "\e904";
+}
+.fancyformsicon.fancyformsicon-paragraph:before {
+    content: "\e905";
+}
+.fancyformsicon.fancyformsicon-url:before {
+    content: "\e906";
+}
+.fancyformsicon.fancyformsicon-address:before {
+    content: "\e907";
+}
+.fancyformsicon.fancyformsicon-stars:before {
+    content: "\e908";
+}
+.fancyformsicon.fancyformsicon-divider:before {
+    content: "\e909";
+}
+.fancyformsicon.fancyformsicon-text:before {
+    content: "\e90a";
+}
+.fancyformsicon.fancyformsicon-divider-dash:before {
+    content: "\e90b";
+}
+.fancyformsicon.fancyformsicon-textarea:before {
+    content: "\e90c";
+}
+.fancyformsicon.fancyformsicon-recaptcha:before {
+    content: "\e90d";
+}
+.fancyformsicon.fancyformsicon-select:before {
+    content: "\e90e";
+}
+.fancyformsicon.fancyformsicon-image-select:before {
+    content: "\e90f";
+}
+.fancyformsicon.fancyformsicon-html:before {
+    content: "\e910";
+}
+.fancyformsicon.fancyformsicon-user-id:before {
+    content: "\e911";
+}
+.fancyformsicon.fancyformsicon-spacer:before {
+    content: "\e912";
+}
+.fancyformsicon.fancyformsicon-time:before {
+    content: "\e913";
+}
+.fancyformsicon.fancyformsicon-radio:before {
+    content: "\e914";
+}
+.fancyformsicon.fancyformsicon-check:before {
+    content: "\e915";
+}
+.fancyformsicon.fancyformsicon-number:before {
+    content: "\e916";
+}
+.fancyformsicon.fancyformsicon-hidden:before {
+    content: "\e917";
+}
+.fancyformsicon.fancyformsicon-range:before {
+    content: "\e918";
+}
+.fancyformsicon.fancyformsicon-range-slider:before {
+    content: "\e918";
+}
+.fancyformsicon.fancyformsicon-quantity:before {
+    content: "\e919";
+}
+.fancyformsicon.fancyformsicon-date:before {
+    content: "\e91a";
+}
+.fancyformsicon.fancyformsicon-upload:before {
+    content: "\e91b";
+}

@@ -1,0 +1,2186 @@
+/* General Styles */
+#fancyforms-wrap *{
+    box-sizing: border-box;
+}
+
+#fancyforms-wrap{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: calc( 100vh );
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 0;
+    background: #FFF;
+    z-index: 99999;
+}
+
+#fancyforms-wrap a{
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+#fancyforms-wrap img{
+    max-width: 100%;
+}
+
+.toplevel_page_fancyforms.is-fullscreen-mode .notice,
+.toplevel_page_fancyforms.is-fullscreen-mode .settings-error,
+.fancyforms-hidden{
+    display: none !important;
+}
+
+.fancyforms-alway-show{
+    display: block !important;
+}
+
+/* Header Nav */
+.fancyforms-header-nav{
+    background: #f7fafc;
+    border-bottom: 1px solid #EEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fancyforms-header-nav h4{
+    text-transform: uppercase;
+    padding: 0 30px;
+    width: 360px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.fancyforms-header-nav h4 span{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.fancyforms-header-logo{
+    display: block;
+    text-decoration: none;
+}
+
+.fancyforms-header-logo svg{
+    width: 40px;
+}
+
+.fancyforms-header-nav .fancyforms-main-nav{
+    display: inline-flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fancyforms-main-nav li{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.fancyforms-main-nav li a{
+    display: block;
+    padding: 10px 30px;
+    line-height: 50px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: -1px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top:  1px solid transparent;
+    font-size: 14px;
+}
+
+.fancyforms-main-nav li a.fancyforms-active-nav{
+    border-color: #EEE;
+    background: #FFF;
+}
+
+.fancyforms-main-nav li:hover a{
+    color: #000;
+}
+
+.fancyforms-header-nav .fancyforms-ajax-udpate-button{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 20px;
+    background: #000;
+    color: #FFF;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.05);
+    text-transform: uppercase;
+    margin-right: 25px;
+}
+
+.fancyforms-header-nav .fancyforms-ajax-udpate-button span{
+    height: auto;
+    width: auto;
+    font-size: 1.2em;
+}
+
+.fancyforms-header-nav .fancyforms-embed-button{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 20px;
+    background: #10a0ff;
+    color: #FFF;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.05);
+    text-transform: uppercase;
+}
+
+.fancyforms-header-nav .fancyforms-embed-button span{
+    font-size: 1.2em;
+}
+
+.fancyforms-header-nav .fancyforms-preview-button{
+    border-left: 1px solid #e1e2e3;
+    margin-left: 25px;
+    padding: 0 25px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.fancyforms-header-nav .fancyforms-preview-button a{
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.fancyforms-header-nav .fancyforms-preview-button a span{
+    font-size: 1.2em;
+}
+
+.fancyforms-header-nav .fancyforms-close{
+    border-left: 1px solid #e1e2e3;
+    width: 80px;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fancyforms-header-nav .fancyforms-close a{
+    font-size: 30px;
+    color: #333;
+}
+
+/* Main Panel */
+.fancyforms-body{
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    height: 100%;
+}
+
+.fancyforms-fields-sidebar {
+    background: #f8fafc;
+    flex: 0 0 360px;
+    width: 360px;
+    overflow: hidden auto;
+    border-right: 1px solid #EEE;
+}
+
+#fancyforms-form-panel{
+    overflow: hidden auto;
+    flex-grow: 1;
+}
+
+#fancyforms-form-panel::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+#fancyforms-form-panel::-webkit-scrollbar-track {
+    background: #CCC;
+}
+
+/* Handle */
+#fancyforms-form-panel::-webkit-scrollbar-thumb {
+    background: #AAA; 
+}
+
+/* Handle on hover */
+#fancyforms-form-panel::-webkit-scrollbar-thumb:hover {
+    background: #999; 
+}
+
+/* Sidebar Panel Tab */
+.fancyforms-fields-tabs {
+    position: sticky;
+    top: 0;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    background: #FFF;
+    border-bottom: 1px solid #e1e2e3;
+    border-top: 1px solid #e1e2e3;
+    z-index: 9;
+}
+
+.fancyforms-fields-sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.fancyforms-fields-sidebar::-webkit-scrollbar-track {
+    background: #EEE;
+}
+
+/* Handle */
+.fancyforms-fields-sidebar::-webkit-scrollbar-thumb {
+    background: #DDD; 
+}
+
+/* Handle on hover */
+.fancyforms-fields-sidebar::-webkit-scrollbar-thumb:hover {
+    background: #BBB; 
+}
+
+.fancyforms-fields-tabs li {
+    font-size: 15px;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.fancyforms-fields-tabs li a {
+    display: block;
+    padding: 18px 8px;
+    margin-bottom: -1px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    box-shadow: none;
+    outline: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.fancyforms-fields-tabs li.fancyforms-active-tab a{
+    background: #f8fafc;
+    border-left: 1px solid #e1e2e3;
+    border-right: 1px solid #e1e2e3;
+}
+
+.fancyforms-fields-tabs li:last-child.fancyforms-active-tab a{
+    border-right-color: transparent;
+}
+
+.fancyforms-fields-tabs li:first-child.fancyforms-active-tab a{
+    border-left-color: transparent;
+}
+
+/* Add Fields Panel */
+.fancyforms-search-fields {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.ht-fields-panel{
+    padding: 0 20px 40px;
+}
+
+#fancyforms-options-panel,
+#fancyforms-meta-panel{
+    display: none;
+}
+
+.fancyforms-search-fields > span{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    width: auto;
+    font-size: 16px;
+}
+
+.fancyforms-search-fields .fancyforms-search-fields-input{
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    line-height: 1;
+    box-shadow: none;
+    outline: 0;
+    margin: 0;
+}
+
+.fancyforms-fields-list {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fancyforms-fields-list li{
+    margin: 0;
+    padding: 0;
+}
+
+.fancyforms-fields-list li a {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 0px 2px rgba(0,0,0,.05);
+    transition: all 0.3s ease;
+    border: 1px solid #EEE;
+}
+
+.fancyforms-fields-list li a:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+.fancyforms-fields-list li a i{
+    font-size: 30px;
+    color: #000;
+}
+
+.fancyforms-fields-list li a span{
+    display: block;
+    color: #000;
+    font-size: 13px;
+}
+
+.fancyforms-fields-list li.fancyforms-drag-fade {
+    background-color: #EEE;
+    border-radius: 4px;
+}
+
+.fancyforms-fields-list li.fancyforms-drag-fade * {
+    opacity: 0;
+}
+
+/* Icon while dragging */
+.fancyforms-field-box.ui-draggable-dragging {
+    pointer-events: none;
+    z-index: 99;
+}
+
+.fancyforms-field-box.ui-draggable-dragging a {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #FFF;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 1px solid #EEE;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+    width: 152px;
+}
+
+/* Field Options(Tab) Panel */
+.fancyforms-no-field-placeholder {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 0px 2px rgba(0,0,0,.05);
+    border: 2px dashed #EEE;
+    padding: 40px;
+    text-align: center
+}
+
+.fancyforms-no-field-msg {
+    width: 100%;
+    font-size: 14px;
+}
+
+.fancyforms-fields h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Builder No Fields */
+.fancyforms-no-fields {
+    min-height: 250px;
+    margin: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 2px dashed #CCC;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fancyforms-no-fields h3{
+    font-size: 24px;
+}
+
+.fancyforms-editor-has-fields .fancyforms-no-fields{
+    display: none;
+}
+
+/* Builder */
+.fancyforms-form-wrap{
+    position: relative;
+    padding: 30px;
+    max-width: 1200px;
+}
+
+#fancyforms-editor-fields {
+    min-height: 300px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.fancyforms-editor-field-box {
+    position: relative;
+    min-height: 20px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.fancyforms-editor-has-fields #fancyforms-editor-fields{
+    min-height: 0;
+}
+
+/* Submit Button */
+.fancyforms-editor-submit-button-wrap{
+    display: flex;
+}
+
+#fancyforms-editor-wrap .fancyforms-editor-submit-button{
+    display: none;
+    margin: 10px 0 20px 10px;
+    padding: 10px 20px;
+}
+
+#fancyforms-editor-wrap.fancyforms-editor-has-fields .fancyforms-editor-submit-button{
+    display: block;
+}
+
+.fancyforms-editor-submit-button-wrap.fancyforms-submit-btn-align-center{
+    justify-content: center;
+}
+
+.fancyforms-editor-submit-button-wrap.fancyforms-submit-btn-align-right{
+    justify-content: flex-end;
+}
+
+/* Form Fields */
+#fancyforms-editor-fields .fancyforms-editor-form-field{
+    position: relative;
+    margin: 0;
+    padding: 10px; 
+    border: 1px solid transparent;
+    box-shadow: none;
+    background: none;
+}
+
+.fancyforms-editor-form-field .fancyforms-editor-field-container{
+    display: flex;
+    max-width: 100%;
+    width: var(--fancyforms-width);
+}
+
+.fancyforms-editor-form-field .fancyforms-editor-field-type{
+    flex-grow: 1;
+}
+
+.fancyforms-editor-form-field input[type=text],
+.fancyforms-editor-form-field input[type=number],
+.fancyforms-editor-form-field input[type=email],
+.fancyforms-editor-form-field input[type=url],
+.fancyforms-editor-form-field input[type=tel],
+.fancyforms-editor-form-field input[type=range],
+.fancyforms-editor-form-field textarea,
+.fancyforms-editor-form-field select{
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+}
+
+.fancyforms-editor-form-field .fancyforms-editor-field-label {
+    display: block;
+    margin: 0 0 6px;
+}
+
+.fancyforms-editor-form-field .fancyforms-editor-field-content {
+    width: 100%;
+}
+
+.fancyforms-editor-form-field .fancyforms-field-desc{
+    margin-top: 6px;
+}
+
+.fancyforms-editor-form-field.fancyforms-auto-width select{
+    width: auto;
+}
+
+/* Label Position */
+.fancyforms-editor-form-field.fancyforms-label-position-top .fancyforms-editor-field-container{
+    flex-direction: column;
+}
+
+.fancyforms-editor-form-field.fancyforms-label-position-left .fancyforms-editor-field-container,
+.fancyforms-editor-form-field.fancyforms-label-position-right .fancyforms-editor-field-container{
+    gap: 20px;
+}
+
+.fancyforms-editor-form-field.fancyforms-label-position-left .fancyforms-editor-field-label{
+    width: 200px;
+    flex: 0 0 200px;
+    margin: 0;
+}
+
+.fancyforms-editor-form-field.fancyforms-label-position-right .fancyforms-editor-field-label{
+    width: 200px;
+    flex: 0 0 200px;
+    order: 2;
+}
+
+.fancyforms-editor-form-field.fancyforms-label-position-hide .fancyforms-editor-field-label{
+    display: none;
+}
+
+/* Label Alignment */
+.fancyforms-editor-form-field.fancyforms-label-alignment-right .fancyforms-editor-field-label{
+    text-align: right;
+}
+
+.fancyforms-editor-form-field.fancyforms-label-alignment-center .fancyforms-editor-field-label{
+    text-align: center;
+}
+
+/* Text Alignment */
+.fancyforms-editor-form-field.fancyforms-text-alignment-center .fancyforms-editor-field-elements{
+    text-align: center;
+}
+
+.fancyforms-editor-form-field.fancyforms-text-alignment-right .fancyforms-editor-field-elements{
+    text-align: right;
+}
+
+/* Alignment */
+.fancyforms-editor-form-field.fancyforms-field-alignment-center .fancyforms-editor-field-elements{
+    display: flex;
+    justify-content: center;
+}
+
+.fancyforms-editor-form-field.fancyforms-field-alignment-right .fancyforms-editor-field-elements{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Sort States */
+#fancyforms-editor-wrap ul.fancyforms-editor-sorting li.ui-state-default:hover {
+    border: 1px dashed #9999ff;
+}
+
+#fancyforms-editor-wrap ul.fancyforms-editor-sorting li.ui-state-default.selected{
+    border: 1px solid #9999ff;
+    background: rgba(153, 153, 255, 0.09);
+}
+
+/* Form Fields Action Buttons */
+#fancyforms-editor-wrap .fancyforms-editor-form-field:hover .fancyforms-editor-action-buttons{
+    opacity: 1;
+    visibility: visible;
+}
+
+#fancyforms-editor-wrap .fancyforms-editor-action-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+}
+
+#fancyforms-editor-wrap .fancyforms-editor-action-buttons > a {
+    height: 26px;
+    width: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9999ff;
+    color: #FFF;
+    text-decoration: none !important;
+}
+
+#fancyforms-editor-wrap .fancyforms-editor-action-buttons > a > span{
+    height: auto;
+    width: auto;
+    font-size: 13px;
+    line-height: 1;
+    display: inline-block;
+}
+
+/* Placeholder on Dragging */
+#fancyforms-editor-wrap:not(.fancyforms-editor-has-fields) > ul > li.sortable-placeholder{
+    display: none;
+}
+
+#fancyforms-editor-wrap > ul > li.sortable-placeholder {
+    height: 80px !important;
+    border: 2px dashed #CCC;
+    margin: 0 10px 0;
+}
+
+#fancyforms-editor-wrap > ul > li > ul > li.sortable-placeholder{
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    border: 0;
+    width: 8px;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+}
+
+.fancyforms-wait.fancyforms-field-loading{
+    height: 80px !important;
+    margin: 0 10px 0;
+    position: relative;
+}
+
+.fancyforms-wait.fancyforms-field-loading:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+    width: 105px;
+    background-image: 
+        linear-gradient(#EAEAEA 15px, transparent 0), 
+        linear-gradient(#EAEAEA 15px, transparent 0), 
+        linear-gradient(#EAEAEA 15px, transparent 0), 
+        linear-gradient(#EAEAEA 15px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: 0 0, 30px 0, 60px 0, 90px 0;
+    animation: fancyforms-fill 0.6s linear infinite;
+}
+@keyframes fancyforms-fill {
+    0% {   background-image: linear-gradient(#EAEAEA 15px, transparent 0), linear-gradient(#EAEAEA 15px, transparent 0), linear-gradient(#EAEAEA 15px, transparent 0), linear-gradient(#EAEAEA 15px, transparent 0); }
+    25% {   background-image: linear-gradient(#333 15px, transparent 0), linear-gradient(#EAEAEA 15px, transparent 0), linear-gradient(#EAEAEA 15px, transparent 0), linear-gradient(#EAEAEA 15px, transparent 0); }
+    50% {   background-image: linear-gradient(#EAEAEA 15px, transparent 0), linear-gradient(#333 15px, transparent 0), linear-gradient(#EAEAEA 15px, transparent 0), linear-gradient(#EAEAEA 15px, transparent 0); }
+    75% {   background-image: linear-gradient(#EAEAEA 15px, transparent 0), linear-gradient(#EAEAEA 15px, transparent 0), linear-gradient(#333 15px, transparent 0), linear-gradient(#EAEAEA 15px, transparent 0); }
+    100% {   background-image: linear-gradient(#EAEAEA 15px, transparent 0), linear-gradient(#EAEAEA 15px, transparent 0), linear-gradient(#EAEAEA 15px, transparent 0), linear-gradient(#333 15px, transparent 0); }
+}
+
+/* Name Field FrontEnd */
+.fancyforms-editor-field-content .fancyforms-grouped-field[data-name-layout="full"] .fancyforms-subfield-element-first,
+.fancyforms-editor-field-content .fancyforms-grouped-field[data-name-layout="full"] .fancyforms-subfield-element-middle,
+.fancyforms-editor-field-content .fancyforms-grouped-field[data-name-layout="full"] .fancyforms-subfield-element-last,
+.fancyforms-editor-field-content .fancyforms-grouped-field[data-name-layout="first_last"] .fancyforms-subfield-element-full,
+.fancyforms-editor-field-content .fancyforms-grouped-field[data-name-layout="last_first"] .fancyforms-subfield-element-full,
+.fancyforms-editor-field-content .fancyforms-grouped-field[data-name-layout="first_middle_last"] .fancyforms-subfield-element-full,
+.fancyforms-editor-field-content .fancyforms-grouped-field[data-name-layout="first_last"] .fancyforms-subfield-element-middle,
+.fancyforms-editor-field-content .fancyforms-grouped-field[data-name-layout="last_first"] .fancyforms-subfield-element-middle{
+    display: none;
+}
+
+.fancyforms-editor-field-content .fancyforms-grouped-field[data-name-layout="first_last"] .fancyforms-subfield-element,
+.fancyforms-editor-field-content .fancyforms-grouped-field[data-name-layout="last_first"] .fancyforms-subfield-element{
+    grid-column:span 6 / span 6;
+}
+
+.fancyforms-editor-field-content .fancyforms-grouped-field[data-name-layout="first_middle_last"] .fancyforms-subfield-element{
+    grid-column: span 4/span 4;
+}
+
+.fancyforms-editor-field-content .fancyforms-grouped-field[data-name-layout="first_middle_last"] .fancyforms-subfield-element.fancyforms-subfield-element-middle{
+    display: block;
+}
+
+.fancyforms-editor-field-content .fancyforms-grouped-field[data-name-layout="last_first"] .fancyforms-subfield-element.fancyforms-subfield-element-first{
+    order: 2;
+}
+
+/* Divider FrontEnd */
+.fancyforms-editor-field-type-spacer .fancyforms-editor-field-label{
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.5;
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+/* Image BackEnd */
+.fancyforms-image-preview .button{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    line-height: 1.2;
+    margin: 10px 0 0;
+}
+
+.fancyforms-image-preview-box img{
+    width: 100%;
+}
+
+/* Image FrontEnd */
+.fancyforms-editor-field-type-image .fancyforms-no-image-field{
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.fancyforms-editor-field-type-image .fancyforms-editor-field-container{
+    width: 100%;
+}
+
+.fancyforms-editor-field-type-image .fancyforms-image-preview-front{
+    width: var(--fancyforms-width);
+}
+
+/* Select */
+.fancyforms-bulk-edit-link {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    outline: 0;
+    box-shadow: none;
+}
+
+.ui-dialog[aria-describedby="fancyforms-bulk-edit-modal"]{
+    z-index: 999999;
+}
+
+.ui-widget-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 8;
+}
+
+#fancyforms-bulk-edit-modal{
+    display: none;
+}
+
+#fancyforms-bulk-edit-modal .postbox{
+    border-bottom: 1px solid #EEE;
+}
+
+.fancyforms-bulk-edit-modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #EEE;
+}
+
+.fancyforms-bulk-edit-modal-header h2{
+    font-size: 20px;
+    margin: 0;
+}
+
+.fancyforms-bulk-edit-modal-header .dismiss{
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+.fancyforms-bulk-edit-body.fancyforms-editor-grid-container{
+    margin: 20px;
+    gap: 30px;
+}
+
+.fancyforms-bulk-edit-body p{
+    margin: 0 0 10px;
+}
+
+.fancyforms-bulk-edit-body textarea{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #EEE;
+    box-shadow: none;
+}
+
+.fancyforms-bulk-edit-modal-footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    border-top: 1px solid #EEE;
+}
+
+.fancyforms-bulk-edit-sidebar h3{
+    font-size: 16px;
+    margin: 0 0  15px;
+}
+
+.fancyforms-bulk-edit-sidebar .fancyforms-default-opts{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fancyforms-bulk-edit-sidebar .fancyforms-default-opts li{
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.fancyforms-bulk-edit-sidebar .fancyforms-default-opts li a{
+    text-decoration: none;
+}
+
+#fancyforms-update-bulk-options{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Heading FrondEnd*/
+.fancyforms-editor-field-type-heading h1,
+.fancyforms-editor-field-type-heading h2,
+.fancyforms-editor-field-type-heading h3,
+.fancyforms-editor-field-type-heading h4,
+.fancyforms-editor-field-type-heading h5,
+.fancyforms-editor-field-type-heading h6{
+    margin: 0;
+}
+
+.fancyforms-editor-field-type-paragraph p{
+    margin: 0;
+}
+
+/* Time BackEnd */
+.fancyforms-editor-field-type-time .fancyforms-flex-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.fancyforms-editor-field-type-time .fancyforms-flex-container select{
+    flex: 0 0 80px;
+    width: 80px;
+}
+
+/* Range Slider FrondEnd */
+.fancyforms-editor-field-type-range_slider .fancyforms-range-slider-container {
+    width: 100%;
+}
+
+/* Star FrontEnd */
+.fancyforms-editor-field-content .fancyforms-star-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.fancyforms-editor-field-content .fancyforms-star-group .fancyforms-star-rating {
+    font-size: 25px;
+}
+
+.fancyforms-editor-field-content .fancyforms-star-group input {
+    display: none;
+}
+
+/* Checkbox/Radio FrontEnd */
+.fancyforms-editor-field-type-radio .fancyforms-choice label,
+.fancyforms-editor-field-type-checkbox .fancyforms-choice label{
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.fancyforms-editor-field-content .fancyforms-choice input[type="checkbox"],
+.fancyforms-editor-field-content .fancyforms-choice input[type="radio"]{
+    margin: 0;
+}
+
+.fancyforms-editor-field-type-image_select .fancyforms-choice-container,
+.fancyforms-editor-field-type-radio .fancyforms-choice-container,
+.fancyforms-editor-field-type-checkbox .fancyforms-choice-container{
+    display: grid;
+    gap: 10px 30px;
+}
+
+.fancyforms-options-layout-inline.fancyforms-editor-field-type-radio .fancyforms-choice-container,
+.fancyforms-options-layout-inline.fancyforms-editor-field-type-checkbox .fancyforms-choice-container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.fancyforms-options-layout-1.fancyforms-editor-field-type-radio .fancyforms-choice-container,
+.fancyforms-options-layout-1.fancyforms-editor-field-type-checkbox .fancyforms-choice-container{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.fancyforms-options-layout-2.fancyforms-editor-field-type-radio .fancyforms-choice-container,
+.fancyforms-options-layout-2.fancyforms-editor-field-type-checkbox .fancyforms-choice-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fancyforms-options-layout-3.fancyforms-editor-field-type-radio .fancyforms-choice-container,
+.fancyforms-options-layout-3.fancyforms-editor-field-type-checkbox .fancyforms-choice-container{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fancyforms-options-layout-4.fancyforms-editor-field-type-radio .fancyforms-choice-container,
+.fancyforms-options-layout-4.fancyforms-editor-field-type-checkbox .fancyforms-choice-container{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fancyforms-options-layout-5.fancyforms-editor-field-type-radio .fancyforms-choice-container,
+.fancyforms-options-layout-5.fancyforms-editor-field-type-checkbox .fancyforms-choice-container{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.fancyforms-options-layout-6.fancyforms-editor-field-type-radio .fancyforms-choice-container,
+.fancyforms-options-layout-6.fancyforms-editor-field-type-checkbox .fancyforms-choice-container{
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* Image Selector BackEnd */
+.fancyforms-is-image-preview-box{
+    height: 60px;
+    width: 120px;
+    border: 1px dashed #CCC;
+    position: relative;
+    cursor: pointer;
+}
+
+.fancyforms-is-image-preview-box:before{
+    content: "+";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #CCC;
+}
+
+.fancyforms-is-image-preview-box.fancyforms-image-added:before{
+    display: none;
+}
+
+.fancyforms-is-image-preview{
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fancyforms-is-image-preview-box .fancyforms-is-remove-image{
+    position: absolute;
+    font-size: 17px;
+    right: 5px;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+    display: none;
+    background: #FF0000;
+    color: #FFF;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.fancyforms-is-image-preview-box.fancyforms-image-added .fancyforms-is-remove-image{
+    display: flex;
+}
+
+.fancyforms-is-image-holder img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Image Selector FrontEnd */
+.fancyforms-editor-field-type-image_select .fancyforms-choice > label{
+    margin: 0 auto;
+    display: block;
+}
+
+.fancyforms-editor-field-type-image_select .fancyforms-field-is-checked {
+    display: none;
+}
+
+.fancyforms-editor-field-type-image_select .fancyforms-choice input:checked + .fancyforms-field-is-container .fancyforms-field-is-checked {
+    display: flex;
+}
+
+.fancyforms-editor-field-type-image_select .fancyforms-choice input{
+    display: none;
+}
+
+.fancyforms-editor-field-type-image_select .fancyforms-field-is-container{
+    position: relative;
+}
+
+.fancyforms-editor-field-type-image_select .fancyforms-field-is-image .fancyforms-field-is-checked{
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    font-size: 25px;
+    background: #FFF;
+    border-radius: 50%;
+    padding: 2px;
+    color: green;
+    height: 30px;
+    width: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 9;
+    align-items: center;
+    justify-content: center;
+}
+
+.fancyforms-editor-field-type-image_select .fancyforms-field-is-image{
+    min-height: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.fancyforms-editor-field-type-image_select .fancyforms-field-is-image:before{
+    content: "NO IMAGE";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    opacity: 0.4;
+}
+
+.fancyforms-editor-field-type-image_select .fancyforms-field-is-image img{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.fancyforms-editor-field-type-image_select .fancyforms-field-is-label{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fancyforms-options-layout-inline.fancyforms-editor-field-type-image_select .fancyforms-choice-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+}
+
+.fancyforms-options-layout-inline.fancyforms-editor-field-type-image_select .fancyforms-choice-container .fancyforms-choice{
+    width: var(--fancyforms-image-width, 250px);
+}
+
+.fancyforms-options-layout-1.fancyforms-editor-field-type-image_select .fancyforms-choice-container{
+    grid-template-columns: repeat(1, minmax(auto , var(--fancyforms-image-width, 250px)));
+}
+
+.fancyforms-options-layout-2.fancyforms-editor-field-type-image_select .fancyforms-choice-container{
+    grid-template-columns: repeat(2, minmax(auto , var(--fancyforms-image-width, 250px)));
+}
+
+.fancyforms-options-layout-3.fancyforms-editor-field-type-image_select .fancyforms-choice-container{
+    grid-template-columns: repeat(3, minmax(auto , var(--fancyforms-image-width, 250px)));
+}
+
+.fancyforms-options-layout-4.fancyforms-editor-field-type-image_select .fancyforms-choice-container{
+    grid-template-columns: repeat(4, minmax(auto , var(--fancyforms-image-width, 250px)));
+}
+
+.fancyforms-options-layout-5.fancyforms-editor-field-type-image_select .fancyforms-choice-container{
+    grid-template-columns: repeat(5, minmax(auto , var(--fancyforms-image-width, 250px)));
+}
+
+.fancyforms-options-layout-6.fancyforms-editor-field-type-image_select .fancyforms-choice-container{
+    grid-template-columns: repeat(6, minmax(auto , var(--fancyforms-image-width, 250px)));
+}
+
+/* Quantity FrontEnd */
+.fancyforms-editor-field-type-spinner .fancyforms-quantity-input{
+    display: flex;
+}
+
+.fancyforms-editor-field-type-spinner .fancyforms-quantity-input input{
+    -moz-appearance: textfield;
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+    display: flex;
+    text-align: center;
+}
+
+.fancyforms-editor-field-type-spinner .fancyforms-quantity-input input::-webkit-outer-spin-button,
+.fancyforms-editor-field-type-spinner .fancyforms-quantity-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.fancyforms-editor-field-type-spinner .fancyforms-quantity-input span{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.fancyforms-editor-field-type-spinner .fancyforms-quantity-input .mdi-minus{
+    margin-right: -60px;
+    border-right: 1px solid #8c8f94;
+}
+
+.fancyforms-editor-field-type-spinner .fancyforms-quantity-input .mdi-plus{
+    margin-left: -60px;
+    border-left: 1px solid #8c8f94;
+}
+
+/* Unit BackEnd */
+.fancyforms-form-input-unit{
+    display: flex;
+}
+
+.fancyforms-form-input-unit input{
+    width: 100px;
+    flex: 0 0 80px;
+    margin: 0;
+    border-radius: 3px 0 0 3px; 
+}
+
+.fancyforms-form-input-unit select{
+    width: 50px;
+    flex: 0 0 60px;
+    margin: 0 0 0 -1px;
+    border-radius: 0 3px 3px 0;
+    text-align: center;
+}
+
+/* Divider */
+.fancyforms-editor-field-type-separator .fancyforms-editor-field-container{
+    width: 100%;
+}
+
+.fancyforms-editor-field-type-separator .fancyforms-separator-border{
+    flex-grow: 1;
+    max-width: var(--fancyforms-width);
+    border-color: #000;
+}
+
+/* HTML */
+.fancyforms-editor-field-type-html .fancyforms-editor-field-container{
+    width: 100%;
+}
+
+.fancyforms-editor-field-type-html .fancyforms-custom-html-field{
+    flex-grow: 1;
+    max-width: var(--fancyforms-width);
+}
+
+.fancyforms-form-text-editor *{
+    box-sizing: content-box !important;
+}
+
+/* Paragraph */
+.fancyforms-editor-field-type-paragraph .fancyforms-editor-field-container{
+    width: 100%;
+}
+
+.fancyforms-editor-field-type-paragraph .fancyforms-paragraph-field{
+    flex-grow: 1;
+    max-width: var(--fancyforms-width);
+}
+
+.fancyforms-form-textarea textarea{
+    height: 100px;
+}
+
+/* Heading */
+.fancyforms-editor-field-type-heading .fancyforms-editor-field-container{
+    width: 100%;
+}
+
+.fancyforms-editor-field-type-heading .fancyforms-heading-field{
+    flex-grow: 1;
+    max-width: var(--fancyforms-width);
+    line-height: 1.3;
+}
+
+/* Address BackEnd */
+.fancyforms-field-show-hide {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+}
+
+.fancyforms-field-show-hide input[type=checkbox] {
+    display: none;
+}
+
+.fancyforms-field-show-hide input[type=checkbox] + label {
+    margin: 0;
+}
+
+.fancyforms-field-show-hide input[type=checkbox] + label:before {
+    width: 32px;
+    height: 18px;
+    content: "";
+    background: #00AC64;
+    display: block;
+    border-radius: 18px;
+}
+
+.fancyforms-field-show-hide input[type=checkbox] + label:after{
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 18px;
+    transition: all 0.2s ease;
+    background: #FFF;
+    top: 2px;
+    border-radius: 20px;
+    left: 12px;
+}
+
+.fancyforms-field-show-hide input[type=checkbox]:checked + label:before {
+    background: #DDD;
+}
+
+.fancyforms-field-show-hide input[type=checkbox]:checked + label:after {
+    left: 2px;
+}
+
+/* Custom HTML FrondEnd Field */
+.fancyforms-custom-html-field{
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 0px 2px rgba(0,0,0,.05);
+    border: 2px dashed #EEE;
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Field Options Tab */
+.fancyforms-field-panel-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fancyforms-field-panel-header h3{
+    font-size: 14px;
+    margin: 0;
+}
+
+h4.fancyforms-field-heading{
+    font-size: 14px;
+    margin: 0;
+}
+
+.fancyforms-form-container h4.fancyforms-validation-header{
+    margin: 0;
+    font-size: 14px;
+}
+
+.fancyforms-form-row label{
+    display: block;
+    margin: 0 0 6px;
+}
+
+.fancyforms-form-row label.fancyforms-label-with-attr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fancyforms-form-row label.fancyforms-field-desc{
+    margin: 6px 0 0;
+}
+
+.fancyforms-form-row .fancyforms-sub-field-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 6px;
+}
+
+.fancyforms-form-row input[type=text],
+.fancyforms-form-row input[type=number],
+.fancyforms-form-row input[type=email],
+.fancyforms-form-row input[type=url],
+.fancyforms-form-row input[type=tel],
+.fancyforms-form-row input[type=range],
+.fancyforms-form-row textarea,
+.fancyforms-form-row select{
+    width: 100%;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.fancyforms-form-row input[type=number]{
+    padding-right: 0;
+}
+
+.fancyforms-form-row ul.fancyforms-option-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.fancyforms-form-row .fancyforms-option-list li{
+    margin: 0;
+    padding: 0;
+}
+
+.fancyforms-form-row .fancyforms-option-list .fancyforms-single-option{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.fancyforms-form-row .fancyforms-option-list .fancyforms-single-option.fancyforms-hidden{
+    display: none;
+}
+
+.fancyforms-form-row .fancyforms-single-option .mdi.mdi-drag{
+    padding: 10px;
+    font-size: 24px;
+}
+
+.fancyforms-form-row .fancyforms-single-option .fancyforms-remove-field{
+    font-size: 18px;
+    box-shadow: none;
+    outline: 0;
+}
+
+.fancyforms-option-list .fancyforms-single-option input[type=checkbox], 
+.fancyforms-option-list .fancyforms-single-option input[type=radio]{
+    margin: 0;
+}
+
+.fancyforms-option-add-list{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fancyforms-option-add-list > a{
+    border: 1px solid #8c8f94;
+    padding: 8px 10px;
+    color: #3c434a;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: 0;
+}
+
+/* === Settings Tabs === */
+.fancyforms-settings-tab{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0 5px;
+    padding: 0;
+}
+
+.fancyforms-settings-tab li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fancyforms-settings-tab li a{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 50px;
+    border-radius: 40px 0 0 40px;
+    color: #333;
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.fancyforms-settings-tab li a:hover{
+    background: #FFF;
+}
+
+.fancyforms-settings-tab li.fancyforms-active a{
+    background: #ddedf8;
+}
+
+.fancyforms-settings-tab li a i{
+    font-size: 1.2em;
+}
+
+/* =========== Form Page Listing =========== */
+.fancyforms-no-form{
+    text-align: center;
+    clear: both;
+    position: relative;
+    top: 30px;
+    border: 1px solid #CCC;
+    background: #FFF;
+    padding: 40px;
+}
+
+.fancyforms-no-form h3{
+    font-size: 24px;
+    margin: 0 0 30px;
+}
+
+.fancyforms-no-form p{
+    margin: 0;
+}
+
+/* =========== Add New Form Modal =========== */
+#fancyforms-shortcode-form-modal,
+#fancyforms-add-form-modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    margin-left: 160px;
+    z-index: 99999;
+}
+
+#fancyforms-shortcode-form-modal{
+    margin-left: 0;
+}
+
+#fancyforms-shortcode-form-modal.fancyforms-open,
+#fancyforms-add-form-modal.fancyforms-open{
+    display: block;
+}
+
+.fancyforms-shortcode-modal-wrap,
+.fancyforms-add-form-modal-wrap{
+    position: fixed;
+    width: 500px;
+    border: 1px solid #EEE;
+    background: #FFF;
+    border-radius: 3px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+}
+
+.fancyforms-shortcode-modal-wrap h3,
+.fancyforms-add-form-modal-wrap h3{
+    margin: -40px -40px 20px;
+    padding: 20px 40px;
+    border-bottom: 1px solid #EEE;
+}
+
+.fancyforms-shortcode-modal-wrap .fancyforms-form-row,
+.fancyforms-add-form-modal-wrap .fancyforms-form-row{
+    margin-bottom: 30px;
+}
+
+.fancyforms-add-form-modal-wrap .fancyforms-form-row input[type="text"]{
+    width: 100%;
+}
+
+.fancyforms-shortcode-modal-wrap .fancyforms-form-row input[type="text"]{
+    width: 100%;
+    background: #f8f8f8;
+    color: #444444;
+    font-family: monospace;
+    font-size: 16px;
+    padding: 10px 55px 10px 10px;
+    text-align: center;
+}
+
+.fancyforms-shortcode-footer,
+.fancyforms-add-form-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fancyforms-shortcode-footer a,
+.fancyforms-add-form-footer a,
+.fancyforms-add-form-footer button{
+    padding: 12px 20px;
+    border: 1px solid #333;
+    background: none;
+    text-decoration: none;
+    border-radius: 3px;
+    color: #333;
+    line-height: 1;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.fancyforms-add-form-footer button{
+    background: #333;
+    color: #FFF;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.fancyforms-add-form-footer button.fancyforms-updating:after{
+    content:"";
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border:2px solid;
+    border-color: #FFF;
+    border-right-color: transparent;
+    animation:fancyforms-spin 0.4s infinite linear;
+}
+
+#fancyforms-add-template .fancyforms-form-row{
+    position: relative;
+}
+
+#fancyforms-add-template .fancyforms-form-row .mdi{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: 1px solid #BBB;
+    height: 36px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #444;
+}
+
+#fancyforms-add-template .fancyforms-form-row .mdi:hover{
+    border-color: #AAA;
+    color: #111;
+    background: #EEE;
+}
+
+.fancyforms-shortcode-footer{
+    justify-content: flex-end;
+}
+
+.fancyforms-copied{
+    text-align: center;
+    color: #198754;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+}
+
+form.fancyforms-success .fancyforms-copied{
+    opacity: 1;
+    visibility: visible;
+}
+/* =========== Add New Form Page =========== */
+.fancyforms-updated-info{
+    position: fixed;
+    top: 100px;
+    right:30px;
+    background: green;
+    color: #FFF;
+    width: 300px;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 99;
+}
+
+.fancyforms-updated-info span{
+    font-size: 20px;
+}
+
+.fancyforms-ajax-udpate-button.fancyforms-updating:after,
+.fancyforms-loading-button:after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: inherit;
+    border-right-color: transparent;
+    animation: fancyforms-spin 0.4s infinite linear;
+}
+
+@keyframes fancyforms-spin {
+    to{transform: rotate(1turn)}
+}
+
+
+/* =========== Settings Page =========== */
+.fancyforms-multiple-email{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.fancyforms-email-row{
+    display: flex;
+    align-items: center;
+    background: #f8fafc;
+    padding: 15px;
+    gap: 15px;
+}
+
+.fancyforms-delete-email-row{
+    background: #FF0000;
+    height: 25px;
+    width: 25px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex: 0 0 25px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.fancyforms-attr-field{
+    position: relative;
+}
+
+.fancyforms-attr-field:hover .fancyforms-add-field-attr-to-form{
+    display: grid;
+}
+
+.fancyforms-attr-field-tags{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.fancyforms-add-field-attr-to-form{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+    background: #FFF;
+    border: 1px solid #EEE;
+    box-shadow: 0 0 12px 0px rgba(0,0,0,0.1);
+    display: none;
+    z-index: 9;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.fancyforms-add-field-attr-to-form li{
+    display: block;
+    margin: 0;
+    padding: 8px 16px;
+    border-bottom: 1px solid #EEE;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 1;
+    width: 140px;
+}
+
+.fancyforms-add-field-attr-to-form li:hover{
+    background: #f8fafc;
+}
+
+.fancyforms-add-field-attr-to-form li:last-child{
+    border: 0;
+}
+
+.fancyforms-add-field-attr-to-form li span{
+    display: block;
+    margin-top: 5px;
+    color: #999;
+    font-size: 10px;
+    pointer-events: none;
+}
+
+/* =========== Style Page  =========== */
+.fancyforms-form-style-template .ht-fields-panel{
+    padding: 20px 20px 40px;
+}
+
+/* =========== Entries Page =========== */
+#fancyforms-form-entry-details{
+    background: #FFF;
+    border: 1px solid #c3c4c7;
+}
+
+#fancyforms-form-entry-details table{
+    border-collapse: collapse;
+    margin: 30px;
+    width: 1000px;
+    max-width: 100%;
+}
+
+#fancyforms-form-entry-details table,
+#fancyforms-form-entry-details th,
+#fancyforms-form-entry-details td{
+    border: 1px solid #EEE;
+}
+
+#fancyforms-form-entry-details th,
+#fancyforms-form-entry-details td{
+    padding: 15px;
+    vertical-align: top;
+}
+
+#fancyforms-form-entry-details th{
+    width: 300px;
+    text-align: right;
+}
+
+#fancyforms-form-entry-details td p{
+    margin: 0;
+}
+
+#fancyforms-form-entry-details tr:hover{
+    background: #f8fafc;
+}
+
+#fancyforms-form-entry-details img{
+    max-width: 150px;
+}
+
+.fancyforms-form-entry-preview{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EEE;
+}
+
+.fancyforms-form-entry-preview:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.fancyforms-form-entry-preview a{
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.fancyforms-form-entry-preview .fancyforms-attachment-icon{
+    width: 40px;
+    border: 1px solid #666;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.fancyforms-empty-row {
+    display: none;
+}
+
+/* Dropzone */
+.fancyforms-dropzone-wrapper {
+    border: 2px dashed #91b0b3;
+    color: #92b0b3;
+    position: relative;
+    height: 150px;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.fancyforms-style-sidebar .fancyforms-dropzone-wrapper {
+    height: 90px;
+}
+
+.fancyforms-dropzone-desc {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-direction: column;
+}
+
+.fancyforms-dropzone-desc .mdi{
+    font-size: 22px;
+}
+
+.fancyforms-dropzone,
+.fancyforms-dropzone:focus {
+    position: absolute;
+    outline: none !important;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.fancyforms-dropzone-wrapper:hover,
+.fancyforms-dropzone-wrapper.dragover {
+    background: #ecf0f5;
+}
+
+.fancyforms-preview-zone {
+    border: 1px dashed #CCC;
+    max-width: 500px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.fancyforms-preview-zone .fancyforms-box-solid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.fancyforms-preview-zone .fancyforms-remove-preview{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: red;
+    border: none;
+    background: none !important;
+    vertical-align: top;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.fancyforms-preview-zone.hidden + .fancyforms-dropzone-wrapper + #fancyforms_import{
+    display: none;
+}
+
+/* =========== Setting Main Menu Page  =========== */
+#fancyforms-settings-wrap{
+    background: #FFF;
+    border: 1px solid #c3c4c7;
+}
+
+.fancyforms-page-title{
+    border-bottom: none;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+}
+
+.fancyforms-page-title h3{
+    margin: 0;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.fancyforms-footer {
+    background: #FFF;
+    float: none;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #c3c4c7;
+}
+
+/* =========== All Grid CSS =========== */
+.fancyforms-grouped-field{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.fancyforms-grouped-field > *{
+    grid-column: span 12 / span 12;
+}
+
+.fancyforms-grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+.fancyforms-grid-container > *{
+    grid-column: span 6;
+}
+
+.fancyforms-editor-grid-container{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0 5px;
+}
+
+.fancyforms-editor-grid-container > *{
+    grid-column: span 12 / span 12;
+}
+
+.fancyforms-grid-12{
+    grid-column:span 12 / span 12;
+}
+
+.fancyforms-grid-11{
+    grid-column:span 11 / span 11;
+}
+
+.fancyforms-grid-10{
+    grid-column:span 10 / span 10;
+}
+
+.fancyforms-grid-9{
+    grid-column:span 9 / span 9;
+}
+
+.fancyforms-grid-8{
+    grid-column:span 8 / span 8;
+}
+
+.fancyforms-grid-7{
+    grid-column:span 7 / span 7;
+}
+
+.fancyforms-grid-6{
+    grid-column:span 6 / span 6;
+}
+
+.fancyforms-grid-5{
+    grid-column:span 5 / span 5;
+}
+
+.fancyforms-grid-4{
+    grid-column:span 4 / span 4;
+}
+
+.fancyforms-grid-3{
+    grid-column: span 3/span 3;
+}
+
+.fancyforms-grid-2{
+    grid-column: span 2/span 2;
+}
+
+.fancyforms-grid-1{
+    grid-column: span 1/span 1;
+}
+
+/* SMTP Page */
+.fancyforms-smtp-page{
+    width: 600px;
+    margin: 30px auto;
+    background: #FFF;
+    padding: 40px;
+    border: 1px solid #ECECEC;
+}
+
+.fancyforms-smtp-page h3{
+    margin: 0 0 15px;
+}
+
+.fancyforms-smtp-page p{
+    font-size: 15px;
+    margin: 0 0 25px;
+}
+
+/* =========== Admin Preview  =========== */
+.fancyforms-form-preview{
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.fancyforms-flex{
+    display: flex;
+    gap: 10px;
+}
+
+#fancyforms-test-email-button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.fancyforms-error{
+    color: #ff3333;
+    margin-top: 5px;
+}
+
+.fancyforms-success{
+    color: #198754;
+    margin-top: 5px;
+}
+
+
+/* FancyForms Settings Conditional logic */
+.fancyforms-condition-repeater-blocks{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.fancyforms-condition-repeater-block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #EEE;
+    padding: 15px;
+}
+
+.fancyforms-condition-seperator {
+    font-weight: bold
+}
+
+.fancyforms-condition-remove {
+    cursor: pointer;
+    background: #FF0000;
+    color: #FFF;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 30px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.fancyforms-add-more-condition{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 20px;
+    background: #10a0ff;
+    color: #FFF;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.05);
+    text-transform: uppercase;
+}
+
+.fancyforms-add-more-condition:hover{
+    background: #000;
+}
+
+
+#fancyforms-entry-list{
+    clear: both;
+    margin-top: 20px;
+}
+
+/** Admin Notice **/
+.fancyforms-notice.notice {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 20px 20px 40px !important;
+    position: relative;
+}
+
+.fancyforms-notice.notice .fancyforms-notice-logo{
+    width: 55px;
+    flex: 55px 0 0;
+}
+
+.fancyforms-notice.notice .fancyforms-notice-logo svg{
+    fill: #72aee6;
+    display: block;
+}
+
+.fancyforms-notice.notice p{
+    padding: 0;
+    margin: 0 0 15px;
+    font-size: 16px;
+}
+
+.fancyforms-notice.notice .button .dashicons{
+    height: auto;
+    width: auto;
+    margin: 0 0 0 6px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.fancyforms-notice a.notice-dismiss {
+    text-decoration: none;
+}

@@ -1,0 +1,854 @@
+.post-type-fancyforms-styles #post-body.columns-2 #postbox-container-1{
+    display: none;
+}
+
+.post-type-fancyforms-styles .postbox{
+    border: 0;
+    box-shadow: none;
+    margin: 0
+}
+
+.post-type-fancyforms-styles #major-publishing-actions{
+    background: none;
+    padding: 0;
+    border-top: 0;
+}
+
+.post-type-fancyforms-styles #publishing-action{
+    float: none;
+}
+
+.post-type-fancyforms-styles{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.post-type-fancyforms-styles #poststuff #post-body.columns-2{
+    margin: 0;
+}
+
+.post-type-fancyforms-styles.post-new-php .wrap,
+.post-type-fancyforms-styles.post-php .wrap{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 30px 30px 0;
+    overflow: hidden;
+    background: #FFF;
+    z-index: 99999;
+    height: calc(100vh - 30px);
+    overflow-y: scroll;
+}
+
+.post-type-fancyforms-styles.post-new-php .wrap .wp-heading-inline,
+.post-type-fancyforms-styles.post-php .wrap .wp-heading-inline,
+.post-type-fancyforms-styles.post-new-php .page-title-action,
+.post-type-fancyforms-styles.post-php .wrap .page-title-action{
+    display: none;
+}
+
+.post-type-fancyforms-styles.post-new-php #poststuff,
+.post-type-fancyforms-styles.post-php .wrap #poststuff{
+    padding: 0;
+}
+
+.post-type-fancyforms-styles .fancyforms-body{
+    height: calc(100vh - 190px);
+}
+
+.post-type-fancyforms-styles .fancyforms-footer{
+    position: sticky;
+    bottom: 0;
+    z-index: 99;
+    gap: 20px;
+    align-items: center;
+}
+
+.post-type-fancyforms-styles.post-new-php #message,
+.post-type-fancyforms-styles.post-php #message{
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    width: 300px;
+    z-index: 99;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Settings Metabox */
+#fancyforms-styles-metabox{
+    border: 1px solid #c3c4c7;
+}
+
+#fancyforms-styles-metabox .postbox-header{
+    display: none;
+}
+
+#fancyforms-styles-metabox .inside{
+    padding: 0;
+    margin: 0;
+}
+
+#fancyforms-styles-metabox .fancyforms-settings-heading{
+    background: #ddedf8;
+    padding: 8px 20px;
+    color: #333;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#fancyforms-styles-metabox .fancyforms-settings-heading .mdi{
+    font-size: 20px;
+}
+
+.fancyforms-form-settings{
+    display: none;
+}
+
+.fancyforms-settings-row{
+    margin: 0 0 15px;
+}
+
+.fancyforms-settings-row select,
+.fancyforms-settings-row input[type="text"],
+.fancyforms-settings-row input[type="email"]{
+    width: 100%;
+}
+
+.fancyforms-settings-row .fancyforms-setting-label{
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0 0 5px;
+}
+
+.fancyforms-setting-fields p.fancyforms-desc{
+    margin: 8px 0 0;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.fancyforms-setting-fields select[multiple]{
+    width: 400px;
+}
+
+.fancyforms-setting-fields input[type="number"]{
+    width: 80px;
+}
+
+.fancyforms-settings-updated{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: green;
+    color: #FFF;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* Tab */
+.fancyforms-tab-container{
+    margin: 0 0 10px;
+}
+
+.fancyforms-tab-container .fancyforms-setting-tab{
+    display: flex;
+    margin: 0;
+    padding: 0
+}
+
+.fancyforms-setting-tab-panel{
+    border: 1px solid #EEE;
+    margin: 0;
+    padding: 15px;
+}
+
+.fancyforms-setting-tab-panel .fancyforms-settings-row{
+    margin: 0 0 10px;
+}
+
+.fancyforms-setting-tab li{
+    padding: 12px 20px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    flex-grow: 1;
+    cursor: pointer;
+    text-align: center;
+    background: #eaeaea;
+    font-size: 12px;
+}
+
+.fancyforms-setting-tab li:hover{
+    background: #ddedf8;
+}
+
+.fancyforms-setting-tab li.fancyforms-tab-active{
+    background: #2170b1;
+    color: #FFF;
+}
+
+/* Icon Chooser */
+.fancyforms-icon-box-wrap{
+    position: relative;
+    width: 382px;
+}
+
+.fancyforms-icon-box-wrap .fancyforms-icon-box {
+    display: none;
+}
+
+.fancyforms-icon-box-wrap .fancyforms-selected-icon {
+    background: #f6f6f6;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #eee;
+    position: relative;
+    margin-right: 44px;
+    cursor: pointer;
+    font-size: 22px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fancyforms-icon-box-wrap .fancyforms-selected-icon span {
+    position: absolute;
+    background: #f6f6f6;
+    right: -45px;
+    top: -1px;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #eee;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fancyforms-icon-box-wrap .fancyforms-selected-icon span i.fancyforms-down-icon{
+    display: block;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.fancyforms-icon-box-wrap .fancyforms-icon-search {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #f7f7f7;
+    border: 1px solid #eee;
+    border-top: 0;
+}
+
+.fancyforms-icon-box-wrap .fancyforms-icon-search select {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.fancyforms-icon-box-wrap .fancyforms-icon-list {
+    height: 215px;
+    overflow-y: scroll;
+    font-size: 18px;
+    border: 1px solid #eee;
+    background: #fff;
+    border-top: 0;
+    padding: 4px;
+    margin: 0;
+    display: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.fancyforms-icon-box-wrap .fancyforms-icon-list::-webkit-scrollbar {
+    display: none;
+}
+
+.fancyforms-icon-box-wrap .fancyforms-icon-list:first-of-type {
+    display: block;
+}
+
+.fancyforms-icon-box-wrap .fancyforms-icon-list li {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    width: 43px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    font-size: 18px;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+.fancyforms-type-icon .fancyforms-icon-box-wrap .fancyforms-icon-list li{
+    height: 38px;
+    width: 38px;
+}
+
+.fancyforms-icon-box-wrap .fancyforms-icon-list li:hover {
+    background: #333;
+    border: 1px solid #333;
+    color: #fff;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.fancyforms-icon-box-wrap .fancyforms-icon-list li.icon-active {
+    background: #0073aa;
+    border: 1px solid #0073aa;
+    color: #fff;
+}
+
+/* Image Uploader */
+.fancyforms-custom-img-icon-btn{
+    position: relative;
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.fancyforms-custom-menu-image-icon{
+    height: 60px;
+    width: 60px;
+    border: 2px dashed #EEE;
+}
+
+.fancyforms-custom-menu-image-icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.fancyforms-image-remove {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: #FF0000;
+    opacity: 0.6;
+    text-indent: -9999px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.fancyforms-custom-img-icon-btn:hover .fancyforms-image-remove {
+    opacity: 1;
+}
+
+.fancyforms-image-remove:before, 
+.fancyforms-image-remove:after {
+    position: absolute;
+    left: 9px;
+    content: ' ';
+    height: 10px;
+    width: 1px;
+    background-color: #fff;
+    top: 5px;
+}
+
+.fancyforms-image-remove:before {
+    transform: rotate(45deg);
+}
+
+.fancyforms-image-remove:after {
+    transform: rotate(-45deg);
+}
+
+/* Typography */
+.fancyforms-typography-fields{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    margin: 10px 0 0;
+}
+
+.fancyforms-typography-fields li{
+    margin: 0;
+    padding: 0;
+}
+
+.fancyforms-typography-fields li.fancyforms-typography-font-size-field,
+.fancyforms-typography-fields li.fancyforms-typography-line-height-field,
+.fancyforms-typography-fields li.fancyforms-typography-letter-spacing-field,
+.fancyforms-typography-fields li.fancyforms-typography-color-field {
+    grid-column: span 2;
+}
+
+.fancyforms-typography-fields li > label{
+    display: block;
+    margin-bottom: 6px;
+}
+
+/*Toggle Button*/
+.fancyforms-toggle-input-field input[type=checkbox]{
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background: rgb(255, 42, 43);
+    position: relative;
+    border: 0;
+    margin: 0;
+    min-width: 0;
+    box-shadow: none;
+}
+
+.fancyforms-toggle-input-field input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transition: all 0.2s ease;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+    background-color: rgb(255, 42, 43);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.fancyforms-toggle-input-field input[type=checkbox]:checked {
+    background-color: rgb(15, 202, 128);
+}
+
+.fancyforms-toggle-input-field input[type=checkbox]:checked:before {
+    background-color: rgb(15, 202, 128);
+    transform: translateX(20px);
+}
+
+/*Choosen Select*/
+.fancyforms-typography-fields .chosen-container-single .chosen-single{
+    min-height: 30px;
+    font-size: 14px;
+    line-height: 2;
+    color: #2c3338;
+    border-color: #8c8f94;
+    box-shadow: none;
+    border-radius: 3px;
+    background: #fff url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E) no-repeat right 5px top 55%;
+    background-size: 16px 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 0 0 0 10px;
+}
+
+.fancyforms-typography-fields .chosen-container-single .chosen-single div{
+    display: none;
+}
+
+.fancyforms-typography-fields .chosen-container-single .chosen-single span{
+    margin: 0 26px 0 0;
+}
+
+.fancyforms-typography-fields .chosen-container-single .chosen-search input[type="text"]{
+    background: none !important;
+    padding: 5px;
+    box-shadow: none;
+}
+
+/* Range Slider */
+.fancyforms-settings-row .fancyforms-range-slider-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fancyforms-settings-row .fancyforms-range-slider-wrap .fancyforms-range-slider {
+    position: relative;
+    flex-grow: 1;
+    height: 4px;
+    margin: 12px 0;
+    background: rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.fancyforms-settings-row .fancyforms-range-slider-wrap .fancyforms-range-slider:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.fancyforms-settings-row .fancyforms-range-slider-wrap .fancyforms-range-slider .ui-slider-range {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: #13a1dc;
+}
+
+.fancyforms-settings-row .fancyforms-range-slider-wrap .fancyforms-range-slider .ui-slider-handle {
+    height: 16px;
+    width: 16px;
+    background: #fff;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin: 0 0 0 -8px;
+    transform: translateY(-50%);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fancyforms-settings-row .fancyforms-range-slider-wrap .fancyforms-range-slider + .fancyforms-range-input-selector {
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 50px;
+    height: 28px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+}
+
+.fancyforms-editor-field-content .fancyforms-range-slider-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fancyforms-editor-field-content .fancyforms-range-slider-wrap .fancyforms-range-slider {
+    position: relative;
+    flex-grow: 1;
+    height: 4px;
+    margin: 12px 0;
+    background: rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.fancyforms-editor-field-content .fancyforms-range-slider-wrap .fancyforms-range-slider:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.fancyforms-editor-field-content .fancyforms-range-slider-wrap .fancyforms-range-slider .ui-slider-range {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: #13a1dc;
+}
+
+.fancyforms-editor-field-content .fancyforms-range-slider-wrap .fancyforms-range-slider .ui-slider-handle {
+    height: 16px;
+    width: 16px;
+    background: #fff;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin: 0 0 0 -8px;
+    transform: translateY(-50%);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fancyforms-editor-field-content .fancyforms-range-slider-wrap .fancyforms-range-slider + .fancyforms-range-input-selector {
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 50px;
+    height: 28px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Shadow */
+
+ul.fancyforms-shadow-fields {
+    display: flex;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 9;
+    max-width: 225px;
+}
+
+.fancyforms-shadow-fields li{
+    margin: 0;
+}
+
+.fancyforms-shadow-fields li>label {
+    text-align: center;
+    display: block;
+}
+
+.fancyforms-shadow-fields li input[type="number"] {
+    width: 50px;
+    text-align: center;
+    padding-right: 0;
+}
+
+.fancyforms-shadow-settings-field .fancyforms-color-input-field{
+    position: relative;
+    top: -13px;
+}
+
+
+/* Unit */
+
+.fancyforms-unit-fields {
+    display: flex;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+}
+
+.fancyforms-unit-fields li{
+    margin: 0;
+}
+
+.fancyforms-unit-fields li>label {
+    text-align: center;
+    display: block;
+}
+
+.fancyforms-unit-fields li input[type="number"] {
+    width: 55px;
+    text-align: center;
+    padding-right: 0;
+}
+
+.fancyforms-unit-fields .fancyforms-link-button {
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #8c8f94;
+    color: #2c3338;
+    min-height: 28px;
+    width: 45px;
+    background-color: #a4afb7;
+    color: #fff;
+}
+
+.fancyforms-unit-fields.fancyforms-not-linked .fancyforms-link-button{
+    background: none;
+    color: inherit;
+}
+
+.fancyforms-unit-fields .fancyforms-link-button span {
+    font-size: 16px;
+    height: 28px;
+    width: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fancyforms-unit-fields .fancyforms-link-button .fancyforms-linked{
+    display: flex;
+}
+
+.fancyforms-unit-fields .fancyforms-link-button .fancyforms-unlinked{
+    display: none;
+}
+
+.fancyforms-unit-fields.fancyforms-not-linked .fancyforms-link-button .fancyforms-linked{
+    display: none;
+}
+
+.fancyforms-unit-fields.fancyforms-not-linked .fancyforms-link-button .fancyforms-unlinked{
+    display: flex;
+}
+
+
+/* Text Check Box */
+
+.fancyforms-text-check-box {
+    border: 1px solid #EEE;
+    display: inline-flex;
+}
+
+.fancyforms-text-check-box label {
+    border-right: 1px solid #EEE;
+}
+
+.fancyforms-text-check-box label:last-child {
+    border: none;
+}
+
+.fancyforms-text-check-box label span {
+    display: block;
+    padding: 10px 15px;
+}
+
+.fancyforms-text-check-box label span i {
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 0.9em;
+}
+
+.fancyforms-text-check-box label input:checked+span {
+    background: #000;
+    color: #FFF;
+}
+
+.fancyforms-text-check-box label input {
+    display: none;
+}
+
+/* Multiple Select */
+.fancyforms-setting-fields .select2-container--default .select2-selection--multiple .select2-selection__clear{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 3px 5px;
+    line-height: 1;
+}
+
+.fancyforms-setting-fields .select2-container--default .select2-selection--multiple .select2-selection__rendered{
+    padding-right: 20px;
+}
+
+.fancyforms-setting-fields .select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+    margin: 0;
+}
+
+.fancyforms-setting-fields .select2-container--default .select2-selection--multiple li.select2-selection__choice{
+    background: #333;
+    color: #FFF;
+    border-radius: 2px;
+    border: 0;
+    padding: 3px 6px;
+    margin: 5px 5px 0 0;
+}
+
+.fancyforms-setting-fields .select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    color: #333;
+    background: #FFF;
+    border-radius: 10px;
+    height: 14px;
+    width: 14px;
+    line-height: 12px;
+    text-align: center;
+    margin-right: 6px;
+}
+
+.fancyforms-setting-fields .select2-container--default .select2-search--inline .select2-search__field{
+    min-height: 0;
+}
+
+/* Color Picker */
+.fancyforms-typography-color-field{
+    position: relative;
+}
+
+.fancyforms-typography-color-field .fancyforms-typography-input-field,
+.fancyforms-color-input-field{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -35px;
+}
+
+.fancyforms-settings-row .fancyforms-color-input-label{
+    margin: 0 !important;
+    padding: 10px 0 !important;
+}
+
+.fancyforms-setting-fields .wp-picker-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.fancyforms-setting-fields .wp-picker-container .wp-color-result.button{
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+}
+
+.fancyforms-setting-fields .wp-picker-open+.wp-picker-input-wrap{
+    display: flex;
+    clear: both;
+    width: 255px;
+    margin-top: 15px;
+}
+
+.fancyforms-setting-fields .wp-picker-input-wrap label{
+    flex-grow: 1;
+}
+
+.fancyforms-setting-fields .wp-picker-container input[type=text].wp-color-picker{
+    width: 100% !important;
+}
+
+.fancyforms-setting-fields .wp-color-result-text{
+    display: none;
+}
+
+.fancyforms-form-wrap .fancyforms-form-preview{
+    max-width: 100%;
+    margin: 0;
+}
+
+.fancyforms-sticky-sidebar{
+    padding: 30px;
+}
+
+.fancyforms-footer .fancyforms-preview-close a{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+/*
+.fancyforms-preview-close{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
+.fancyforms-preview-close a{
+    text-decoration: none;
+    height: 46px;
+    width: 46px;
+    background: #000;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 3px;
+}
+position: sticky;
+    top: -30px;
+.post-type-fancyforms-styles .fancyforms-body,
+.post-type-fancyforms-styles .fancyforms-fields-sidebar{
+    overflow: visible;
+}
+*/

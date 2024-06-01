@@ -1,0 +1,1515 @@
+.fancyforms-form-preview .fancyforms-form-error{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-preview{
+    background: var(--fancyforms-form-bg-color, transparent);
+    box-shadow: var(--fancyforms-form-shadow-x, 0) var(--fancyforms-form-shadow-y, 0) var(--fancyforms-form-shadow-blur, 0) var(--fancyforms-form-shadow-spread, 0) var(--fancyforms-form-shadow-color, transparent);
+    padding: var(--fancyforms-form-padding-top, 0) var(--fancyforms-form-padding-right, 0) var(--fancyforms-form-padding-bottom, 0) var(--fancyforms-form-padding-left, 0);
+    border-top: var(--fancyforms-form-border-top, 0) solid var(--fancyforms-form-border-color, transparent);
+    border-right: var(--fancyforms-form-border-right, 0) solid var(--fancyforms-form-border-color, transparent);
+    border-bottom: var(--fancyforms-form-border-bottom, 0) solid var(--fancyforms-form-border-color, transparent);
+    border-left: var(--fancyforms-form-border-left, 0) solid var(--fancyforms-form-border-color, transparent);
+    border-radius: var(--fancyforms-form-border-radius-top, 0) var(--fancyforms-form-border-radius-right, 0) var(--fancyforms-form-border-radius-bottom, 0) var(--fancyforms-form-border-radius-left, 0);
+}
+
+.fancyforms-container *{
+    box-sizing: border-box;
+}
+
+.fancyforms-container img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.fancyforms-hidden{
+    display: none;
+}
+
+/* Form Container and Fields */
+.fancyforms-container,
+.fancyforms-grouped-field{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.fancyforms-form-custom-style .fancyforms-container,
+.fancyforms-form-custom-style .fancyforms-grouped-field{
+    grid-gap: var(--fancyforms-form-row-gap, 20px) var(--fancyforms-form-column-gap, 20px);
+}
+
+
+.fancyforms-container > *{
+    grid-column: span 12 / span 12;
+}
+
+.fancyforms-grid-11{
+    grid-column:span 11 / span 11;
+}
+
+.fancyforms-grid-10{
+    grid-column:span 10 / span 10;
+}
+
+.fancyforms-grid-9{
+    grid-column:span 9 / span 9;
+}
+
+.fancyforms-grid-8{
+    grid-column:span 8 / span 8;
+}
+
+.fancyforms-grid-7{
+    grid-column:span 7 / span 7;
+}
+
+.fancyforms-grid-6{
+    grid-column:span 6 / span 6;
+}
+
+.fancyforms-grid-5{
+    grid-column:span 5 / span 5;
+}
+
+.fancyforms-grid-4{
+    grid-column:span 4 / span 4;
+}
+
+.fancyforms-grid-3{
+    grid-column: span 3/span 3;
+}
+
+.fancyforms-grid-2{
+    grid-column: span 2/span 2;
+}
+
+.fancyforms-grid-1{
+    grid-column: span 1/span 1;
+}
+
+/* Forms Title and Description */
+.fancyforms-form-tempate .fancyforms-form-title{
+    margin: 0 0 20px;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-title{
+    font-family: var(--fancyforms-form-title-typo-font-family);
+    font-size: var(--fancyforms-form-title-typo-font-size, 30px);
+    font-weight: var(--fancyforms-form-title-typo-font-weight, 700);
+    font-style: var(--fancyforms-form-title-typo-font-style, normal);
+    letter-spacing: var(--fancyforms-form-title-typo-letter-spacing, normal);
+    text-transform: var(--fancyforms-form-title-typo-text-transform, inherit);
+    text-decoration: var(--fancyforms-form-title-typo-text-decoration, inherit);
+    line-height: var(--fancyforms-form-title-typo-line-height, 1.2);
+    color: var(--fancyforms-form-title-typo-font-color, #666);
+    margin: 0 0 var(--fancyforms-form-title-spacing, 20px);
+}
+
+.fancyforms-form-defaut-style .fancyforms-form-title{
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: inherit;
+    text-decoration: inherit;
+    line-height: 1.2;
+    color: #666;
+}
+
+.fancyforms-form-description p{
+    margin: 0 0 0.7em
+}
+
+.fancyforms-form-custom-style .fancyforms-form-description p{
+    font-family: var(--fancyforms-form-desc-typo-font-family);
+    font-size: var(--fancyforms-form-desc-typo-font-size, 16px);
+    font-weight: var(--fancyforms-form-desc-typo-font-weight, 400);
+    font-style: var(--fancyforms-form-desc-typo-font-style, normal);
+    letter-spacing: var(--fancyforms-form-desc-typo-letter-spacing, normal);
+    text-transform: var(--fancyforms-form-desc-typo-text-transform, inherit);
+    text-decoration: var(--fancyforms-form-desc-typo-text-decoration, inherit);
+    line-height: var(--fancyforms-form-desc-typo-line-height, 1.2);
+    color: var(--fancyforms-form-desc-typo-font-color, #666);
+}
+
+.fancyforms-form-default-style .fancyforms-form-description p{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: inherit;
+    text-decoration: inherit;
+    line-height: 1.2;
+    color: #666;
+}
+
+.fancyforms-form-tempate .fancyforms-form-description{
+    margin: 0 0 20px;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-description{
+    margin: 0 0 var(--fancyforms-form-desc-spacing, 20px);
+}
+
+/* Forms */
+.fancyforms-container button,
+.fancyforms-container input[type="button"],
+.fancyforms-container input[type="reset"],
+.fancyforms-container input[type="submit"] {
+    cursor: pointer;
+}
+
+.fancyforms-form-custom-style .fancyforms-container button,
+.fancyforms-form-custom-style .fancyforms-container input[type="button"],
+.fancyforms-form-custom-style .fancyforms-container input[type="reset"],
+.fancyforms-form-custom-style .fancyforms-container input[type="submit"] {
+    border-top: var(--fancyforms-button-border-top, 1px) solid var(--fancyforms-button-border-color-normal, #CCC);
+    border-right: var(--fancyforms-button-border-right, 1px) solid var(--fancyforms-button-border-color-normal, #CCC);
+    border-bottom: var(--fancyforms-button-border-bottom, 1px) solid var(--fancyforms-button-border-color-normal, #CCC);
+    border-left: var(--fancyforms-button-border-left, 1px) solid var(--fancyforms-button-border-color-normal, #CCC);
+    border-radius: var(--fancyforms-button-border-radius-top, 3px) var(--fancyforms-button-border-radius-right, 3px) var(--fancyforms-button-border-radius-bottom, 3px) var(--fancyforms-button-border-radius-left, 3px);
+    padding: var(--fancyforms-button-padding-top, 15px) var(--fancyforms-button-padding-right, 30px) var(--fancyforms-button-padding-bottom, 15px) var(--fancyforms-button-padding-left, 30px);  
+    font-family: var(--fancyforms-button-typo-font-family);
+    font-size: var(--fancyforms-button-typo-font-size, 14px);
+    font-weight: var(--fancyforms-button-typo-font-weight, 400);
+    font-style: var(--fancyforms-button-typo-font-style, normal);
+    letter-spacing: var(--fancyforms-button-typo-letter-spacing, normal);
+    text-transform: var(--fancyforms-button-typo-text-transform, inherit);
+    text-decoration: var(--fancyforms-button-typo-text-decoration, inherit);
+    line-height: var(--fancyforms-button-typo-line-height, 1.2);
+    color: var(--fancyforms-button-color-normal, #666);
+    background-color: var(--fancyforms-button-bg-color-normal, transparent);
+    box-shadow: var(--fancyforms-button-shadow-normal-x, 0) var(--fancyforms-button-shadow-normal-y, 0) var(--fancyforms-button-shadow-normal-blur, 0) var(--fancyforms-button-shadow-normal-spread, 0) var(--fancyforms-button-shadow-normal-color, transparent);
+    outline: 0;
+    min-height: 0;
+    height: auto;
+}
+
+.fancyforms-form-default-style .fancyforms-container button,
+.fancyforms-form-default-style .fancyforms-container input[type="button"],
+.fancyforms-form-default-style .fancyforms-container input[type="reset"],
+.fancyforms-form-default-style .fancyforms-container input[type="submit"] {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    padding: 15px 30px;  
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: inherit;
+    text-decoration: inherit;
+    line-height: 1.2;
+    outline: 0;
+    min-height: 0;
+    height: auto;
+    color: #FFF;
+    background: #333;
+}
+
+.fancyforms-form-custom-style .fancyforms-container button:hover,
+.fancyforms-form-custom-style .fancyforms-container input[type="button"]:hover,
+.fancyforms-form-custom-style .fancyforms-container input[type="reset"]:hover,
+.fancyforms-form-custom-style .fancyforms-container input[type="submit"]:hover {
+    border-top: var(--fancyforms-button-border-top, 1px) solid var(--fancyforms-button-border-color-hover, var(--fancyforms-button-border-color-normal, #CCC));
+    border-right: var(--fancyforms-button-border-right, 1px) solid var(--fancyforms-button-border-color-hover, var(--fancyforms-button-border-color-normal, #CCC));
+    border-bottom: var(--fancyforms-button-border-bottom, 1px) solid var(--fancyforms-button-border-color-hover, var(--fancyforms-button-border-color-normal, #CCC));
+    border-left: var(--fancyforms-button-border-left, 1px) solid var(--fancyforms-button-border-color-hover, var(--fancyforms-button-border-color-normal, #CCC));
+    color: var(--fancyforms-button-color-hover,var(--fancyforms-button-color-normal, inherit));
+    background-color: var(--fancyforms-button-bg-color-hover, var(--fancyforms-button-bg-color-normal, transparent));
+    box-shadow: var(--fancyforms-button-shadow-hover-x, var(--fancyforms-button-shadow-normal-x, 0)) var(--fancyforms-button-shadow-hover-y, var(--fancyforms-button-shadow-normal-y, 0)) var(--fancyforms-button-shadow-hover-blur, var(--fancyforms-button-shadow-normal-blur, 0)) var(--fancyforms-button-shadow-hover-spread, var(--fancyforms-button-shadow-normal-spread, 0)) var(--fancyforms-button-shadow-hover-color, var(--fancyforms-button-shadow-normal-color, transparent));
+}
+
+.fancyforms-container input[type="text"],
+.fancyforms-container input[type="email"],
+.fancyforms-container input[type="url"],
+.fancyforms-container input[type="password"],
+.fancyforms-container input[type="search"],
+.fancyforms-container input[type="number"],
+.fancyforms-container input[type="tel"],
+.fancyforms-container input[type="range"],
+.fancyforms-container input[type="date"],
+.fancyforms-container input[type="month"],
+.fancyforms-container input[type="week"],
+.fancyforms-container input[type="time"],
+.fancyforms-container input[type="datetime"],
+.fancyforms-container input[type="datetime-local"],
+.fancyforms-container input[type="color"],
+.fancyforms-container textarea,
+.fancyforms-container select{
+    width: 100%;
+    max-width: 100%;
+    outline: 0;
+}
+
+.fancyforms-form-custom-style .fancyforms-container input[type="text"],
+.fancyforms-form-custom-style .fancyforms-container input[type="email"],
+.fancyforms-form-custom-style .fancyforms-container input[type="url"],
+.fancyforms-form-custom-style .fancyforms-container input[type="password"],
+.fancyforms-form-custom-style .fancyforms-container input[type="search"],
+.fancyforms-form-custom-style .fancyforms-container input[type="number"],
+.fancyforms-form-custom-style .fancyforms-container input[type="tel"],
+.fancyforms-form-custom-style .fancyforms-container input[type="range"],
+.fancyforms-form-custom-style .fancyforms-container input[type="date"],
+.fancyforms-form-custom-style .fancyforms-container input[type="month"],
+.fancyforms-form-custom-style .fancyforms-container input[type="week"],
+.fancyforms-form-custom-style .fancyforms-container input[type="time"],
+.fancyforms-form-custom-style .fancyforms-container input[type="datetime"],
+.fancyforms-form-custom-style .fancyforms-container input[type="datetime-local"],
+.fancyforms-form-custom-style .fancyforms-container input[type="color"],
+.fancyforms-form-custom-style .fancyforms-container textarea,
+.fancyforms-form-custom-style .fancyforms-container select{
+    border-top: var(--fancyforms-field-border-top, 1px) solid var(--fancyforms-field-border-color-normal, #CCC);
+    border-right: var(--fancyforms-field-border-right, 1px) solid var(--fancyforms-field-border-color-normal, #CCC);
+    border-bottom: var(--fancyforms-field-border-bottom, 1px) solid var(--fancyforms-field-border-color-normal, #CCC);
+    border-left: var(--fancyforms-field-border-left, 1px) solid var(--fancyforms-field-border-color-normal, #CCC);
+    border-radius: var(--fancyforms-field-border-radius-top, 3px) var(--fancyforms-field-border-radius-right, 3px) var(--fancyforms-field-border-radius-bottom, 3px) var(--fancyforms-field-border-radius-left, 3px);
+    padding: var(--fancyforms-field-padding-top, 10px) var(--fancyforms-field-padding-right, 10px) var(--fancyforms-field-padding-bottom, 10px) var(--fancyforms-field-padding-left, 10px);  
+    font-family: var(--fancyforms-field-typo-font-family);
+    font-size: var(--fancyforms-field-typo-font-size, 14px);
+    font-weight: var(--fancyforms-field-typo-font-weight, 400);
+    font-style: var(--fancyforms-field-typo-font-style, bold);
+    letter-spacing: var(--fancyforms-field-typo-letter-spacing, normal);
+    text-transform: var(--fancyforms-field-typo-text-transform, inherit);
+    text-decoration: var(--fancyforms-field-typo-text-decoration, inherit);
+    line-height: var(--fancyforms-field-typo-line-height, 1.2);
+    color: var(--fancyforms-field-color-normal, #666);
+    background-color: var(--fancyforms-field-bg-color-normal, transparent);
+    box-shadow: var(--fancyforms-field-shadow-normal-x, 0) var(--fancyforms-field-shadow-normal-y, 0) var(--fancyforms-field-shadow-normal-blur, 0) var(--fancyforms-field-shadow-normal-spread, 0) var(--fancyforms-field-shadow-normal-color, transparent);
+    outline: 0;
+    min-height: 0;
+    height: auto;
+}
+
+.fancyforms-form-default-style .fancyforms-container input[type="text"],
+.fancyforms-form-default-style .fancyforms-container input[type="email"],
+.fancyforms-form-default-style .fancyforms-container input[type="url"],
+.fancyforms-form-default-style .fancyforms-container input[type="password"],
+.fancyforms-form-default-style .fancyforms-container input[type="search"],
+.fancyforms-form-default-style .fancyforms-container input[type="number"],
+.fancyforms-form-default-style .fancyforms-container input[type="tel"],
+.fancyforms-form-default-style .fancyforms-container input[type="range"],
+.fancyforms-form-default-style .fancyforms-container input[type="date"],
+.fancyforms-form-default-style .fancyforms-container input[type="month"],
+.fancyforms-form-default-style .fancyforms-container input[type="week"],
+.fancyforms-form-default-style .fancyforms-container input[type="time"],
+.fancyforms-form-default-style .fancyforms-container input[type="datetime"],
+.fancyforms-form-default-style .fancyforms-container input[type="datetime-local"],
+.fancyforms-form-default-style .fancyforms-container input[type="color"],
+.fancyforms-form-default-style .fancyforms-container textarea,
+.fancyforms-form-default-style .fancyforms-container select{
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    padding: 10px;  
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: inherit;
+    text-decoration: inherit;
+    line-height: 1.2;
+    color: #666;
+    background-color: transparent;
+    outline: 0;
+    min-height: 0;
+    height: auto;
+}
+
+.fancyforms-form-custom-style .fancyforms-container input[type="text"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="email"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="url"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="password"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="search"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="number"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="tel"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="range"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="date"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="month"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="week"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="time"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="datetime"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="datetime-local"]:focus,
+.fancyforms-form-custom-style .fancyforms-container input[type="color"]:focus,
+.fancyforms-form-custom-style .fancyforms-container textarea:focus,
+.fancyforms-form-custom-style .fancyforms-container select:focus{
+    border-top: var(--fancyforms-field-border-top, 1px) solid var(--fancyforms-field-border-color-focus, var(--fancyforms-field-border-color-normal, #CCC));
+    border-right: var(--fancyforms-field-border-right, 1px) solid var(--fancyforms-field-border-color-focus, var(--fancyforms-field-border-color-normal, #CCC));
+    border-bottom: var(--fancyforms-field-border-bottom, 1px) solid var(--fancyforms-field-border-color-focus, var(--fancyforms-field-border-color-normal, #CCC));
+    border-left: var(--fancyforms-field-border-left, 1px) solid var(--fancyforms-field-border-color-focus, var(--fancyforms-field-border-color-normal, #CCC));
+    color: var(--fancyforms-field-color-focus,var(--fancyforms-field-color-normal, inherit));
+    background-color: var(--fancyforms-field-bg-color-focus, var(--fancyforms-field-bg-color-normal, transparent));
+    box-shadow: var(--fancyforms-field-shadow-focus-x, var(--fancyforms-field-shadow-normal-x, 0)) var(--fancyforms-field-shadow-focus-y, var(--fancyforms-field-shadow-normal-y, 0)) var(--fancyforms-field-shadow-focus-blur, var(--fancyforms-field-shadow-normal-blur, 0)) var(--fancyforms-field-shadow-focus-spread, var(--fancyforms-field-shadow-normal-spread, 0)) var(--fancyforms-field-shadow-focus-color, var(--fancyforms-field-shadow-normal-color, transparent));
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input.fancyforms-field-focussed .mdi-minus,
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input.fancyforms-field-focussed .mdi-plus{
+    border-color: var(--fancyforms-field-border-color-focus, var(--fancyforms-field-border-color-normal, #CCC));
+}
+
+.fancyforms-form-default-style .fancyforms-container input[type="text"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="email"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="url"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="password"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="search"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="number"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="tel"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="range"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="date"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="month"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="week"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="time"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="datetime"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="datetime-local"]:focus,
+.fancyforms-form-default-style .fancyforms-container input[type="color"]:focus,
+.fancyforms-form-default-style .fancyforms-container textarea:focus,
+.fancyforms-form-default-style .fancyforms-container select:focus{
+    border: 1px solid #BBB;
+}
+
+.fancyforms-container .fancyforms-field-label{
+    margin-bottom: 8px;
+}
+
+.fancyforms-container .fancyforms-field-content{
+    flex-grow: 1;
+}
+
+.fancyforms-form-custom-style .fancyforms-container .fancyforms-field-label{
+    display: block;
+    font-family: var(--fancyforms-label-typo-font-family);
+    font-size: var(--fancyforms-label-typo-font-size, 14px);
+    font-weight: var(--fancyforms-label-typo-font-weight, 400);
+    font-style: var(--fancyforms-label-typo-font-style, normal);
+    letter-spacing: var(--fancyforms-label-typo-letter-spacing, normal);
+    text-transform: var(--fancyforms-label-typo-text-transform, inherit);
+    text-decoration: var(--fancyforms-label-typo-text-decoration, inherit);
+    line-height: var(--fancyforms-label-typo-line-height, 1.2);
+    color: var(--fancyforms-label-typo-font-color, inherit);
+    margin-bottom: var(--fancyforms-label-spacing, 8px);
+}
+
+.fancyforms-container .fancyforms-field-label .fancyforms-field-required{
+    color: #FF0000;
+}
+
+.fancyforms-form-custom-style .fancyforms-container .fancyforms-field-label .fancyforms-field-required{
+    color: var(--fancyforms-label-required-color, #FF0000);
+}
+
+.fancyforms-form-default-style .fancyforms-container .fancyforms-field-label{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: inherit;
+    text-decoration: inherit;
+    line-height: 1.2;
+    color: #666;
+    color: inherit;
+}
+
+.fancyforms-container .fancyforms-field-desc{
+    font-size: 0.82em;
+    margin-top: 5px;
+}
+
+.fancyforms-form-custom-style .fancyforms-container .fancyforms-field-desc{
+    font-family: var(--fancyforms-desc-typo-font-family);
+    font-size: var(--fancyforms-desc-typo-font-size, 0.82em);
+    font-weight: var(--fancyforms-desc-typo-font-weight, 400);
+    font-style: var(--fancyforms-desc-typo-font-style, italic);
+    letter-spacing: var(--fancyforms-desc-typo-letter-spacing, normal);
+    text-transform: var(--fancyforms-desc-typo-text-transform, inherit);
+    text-decoration: var(--fancyforms-desc-typo-text-decoration, inherit);
+    line-height: var(--fancyforms-desc-typo-line-height, 1.2);
+    color: var(--fancyforms-desc-typo-font-color, inherit);
+    margin: var(--fancyforms-desc-spacing, 5px) 0 0;
+}
+
+.fancyforms-form-default-style .fancyforms-container .fancyforms-field-desc{
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: inherit;
+    text-decoration: inherit;
+    line-height: 1.2;
+    color: #666;
+}
+
+.fancyforms-form-default-style .fancyforms-error-container .fancyforms-field-label{
+    color: #FF0000;
+}
+
+.fancyforms-form-custom-style .fancyforms-error-container .fancyforms-field-label{
+    color: var(--fancyforms-validation-typo-font-color, #FF0000);
+}
+
+.fancyforms-form-custom-style .fancyforms-error-container input[type="text"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="email"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="url"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="password"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="search"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="number"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="tel"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="range"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="date"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="month"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="week"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="time"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="datetime"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="datetime-local"],
+.fancyforms-form-custom-style .fancyforms-error-container input[type="color"],
+.fancyforms-form-custom-style .fancyforms-error-container textarea,
+.fancyforms-form-custom-style .fancyforms-error-container select{
+    border-color: var(--fancyforms-validation-typo-font-color, #FF0000);
+}
+
+.fancyforms-container .fancyforms-error-msg{
+    margin: 5px 0 0;
+    color: #FF0000;
+    display: block;
+    background: none;
+    font-size: 0.82em;
+}
+
+.fancyforms-form-custom-style .fancyforms-container .fancyforms-error-msg{
+    font-family: var(--fancyforms-validation-typo-font-family);
+    font-size: var(--fancyforms-validation-typo-font-size, 0.82em);
+    font-weight: var(--fancyforms-validation-typo-font-weight, 400);
+    font-style: var(--fancyforms-validation-typo-font-style, normal);
+    letter-spacing: var(--fancyforms-validation-typo-letter-spacing, normal);
+    text-transform: var(--fancyforms-validation-typo-text-transform, inherit);
+    text-decoration: var(--fancyforms-validation-typo-text-decoration, inherit);
+    line-height: var(--fancyforms-validation-typo-line-height, 1.2);
+    color: var(--fancyforms-validation-typo-font-color, #FF0000);
+    margin: var(--fancyforms-validation-spacing, 5px) 0 0;
+    text-align: var(--fancyforms-validation-textalign, left);
+}
+
+.fancyforms-form-default-style .fancyforms-container .fancyforms-error-msg{
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: inherit;
+    text-decoration: inherit;
+    line-height: 1.2;
+}
+
+/* Label Position */
+.fancyforms-form-field .fancyforms-field-container {
+    display: flex;
+    max-width: 100%; 
+    width: var(--fancyforms-width, 100%);
+}
+
+.fancyforms-form-field .fancyforms-field-type {
+    flex-grow: 1;
+}
+
+.fancyforms-form-field.fancyforms-label-position-top .fancyforms-field-container {
+    flex-direction: column;
+}
+
+.fancyforms-form-field.fancyforms-label-position-left .fancyforms-field-container,
+.fancyforms-form-field.fancyforms-label-position-right .fancyforms-field-container{
+    gap: 20px;
+}
+
+.fancyforms-form-field.fancyforms-label-position-left .fancyforms-field-label{
+    width: 200px;
+    flex: 0 0 200px;
+    margin: 0;
+}
+
+.fancyforms-form-field.fancyforms-label-position-right .fancyforms-field-label{
+    width: 200px;
+    flex: 0 0 200px;
+    order: 2;
+}
+
+.fancyforms-form-field.fancyforms-label-position-hide .fancyforms-field-label{
+    display: none;
+}
+
+/* Label Alignment */
+.fancyforms-form-field.fancyforms-label-alignment-right .fancyforms-field-label{
+    text-align: right;
+}
+
+.fancyforms-form-field.fancyforms-label-alignment-center .fancyforms-field-label{
+    text-align: center;
+}
+
+/* Text Alignment */
+.fancyforms-form-field.fancyforms-text-alignment-center .fancyforms-field-container{
+    text-align: center;
+}
+
+.fancyforms-form-field.fancyforms-text-alignment-right .fancyforms-field-container{
+    text-align: right;
+}
+
+/* Field Alignment */
+.fancyforms-form-field.fancyforms-field-alignment-center .fancyforms-field-container{
+    justify-content: center;
+}
+
+.fancyforms-form-field.fancyforms-field-alignment-right .fancyforms-field-container{
+    justify-content: flex-end;
+}
+
+/* Name Field */
+.fancyforms-form-field.fancyforms-field-type-name .fancyforms-grouped-field .fancyforms-subfield-element{
+    grid-column:span 4 / span 4;
+}
+
+.fancyforms-form-field.fancyforms-field-type-name .fancyforms-grouped-field[data-name-layout="first_last"] .fancyforms-subfield-element,
+.fancyforms-form-field.fancyforms-field-type-name .fancyforms-grouped-field[data-name-layout="last_first"] .fancyforms-subfield-element{
+    grid-column:span 6 / span 6;
+}
+
+.fancyforms-form-field.fancyforms-field-type-name .fancyforms-grouped-field[data-name-layout="full"] .fancyforms-subfield-element{
+    grid-column:span 12;
+}
+
+.fancyforms-form-field.fancyforms-field-type-name .fancyforms-grouped-field[data-name-layout="full"] .fancyforms-subfield-element-first,
+.fancyforms-form-field.fancyforms-field-type-name .fancyforms-grouped-field[data-name-layout="full"] .fancyforms-subfield-element-middle,
+.fancyforms-form-field.fancyforms-field-type-name .fancyforms-grouped-field[data-name-layout="full"] .fancyforms-subfield-element-last,
+.fancyforms-form-field.fancyforms-field-type-name .fancyforms-grouped-field[data-name-layout="first_last"] .fancyforms-subfield-element-full,
+.fancyforms-form-field.fancyforms-field-type-name .fancyforms-grouped-field[data-name-layout="last_first"] .fancyforms-subfield-element-full,
+.fancyforms-form-field.fancyforms-field-type-name .fancyforms-grouped-field[data-name-layout="first_middle_last"] .fancyforms-subfield-element-full,
+.fancyforms-form-field.fancyforms-field-type-name .fancyforms-grouped-field[data-name-layout="first_last"] .fancyforms-subfield-element-middle,
+.fancyforms-form-field.fancyforms-field-type-name .fancyforms-grouped-field[data-name-layout="last_first"] .fancyforms-subfield-element-middle{
+    display: none;
+}
+
+.fancyforms-form-field.fancyforms-field-type-name .fancyforms-grouped-field[data-name-layout="last_first"] .fancyforms-subfield-element-last{
+    order: -1;
+}
+
+/* Heading */
+.fancyforms-form-field.fancyforms-field-type-heading h1{
+    margin: 0;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-heading h1,
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-heading h2,
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-heading h3,
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-heading h4,
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-heading h5,
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-heading h6{
+    font-family: var(--fancyforms-heading-typo-font-family);
+    font-weight: var(--fancyforms-heading-typo-font-weight, 400);
+    font-style: var(--fancyforms-heading-typo-font-style, normal);
+    letter-spacing: var(--fancyforms-heading-typo-letter-spacing, normal);
+    text-transform: var(--fancyforms-heading-typo-text-transform, inherit);
+    text-decoration: var(--fancyforms-heading-typo-text-decoration, inherit);
+    line-height: var(--fancyforms-heading-typo-line-height, 1.2);
+    color: var(--fancyforms-heading-typo-font-color, inherit);
+}
+
+.fancyforms-form-default-style .fancyforms-form-field.fancyforms-field-type-heading h1,
+.fancyforms-form-default-style .fancyforms-form-field.fancyforms-field-type-heading h2,
+.fancyforms-form-default-style .fancyforms-form-field.fancyforms-field-type-heading h3,
+.fancyforms-form-default-style .fancyforms-form-field.fancyforms-field-type-heading h4,
+.fancyforms-form-default-style .fancyforms-form-field.fancyforms-field-type-heading h5,
+.fancyforms-form-default-style .fancyforms-form-field.fancyforms-field-type-heading h6{
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: inherit;
+    text-decoration: inherit;
+    line-height: 1.2;
+    color: #333;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-heading{
+    font-size: var(--fancyforms-heading-typo-font-size, 34px);
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-heading h1{
+    font-size: 1em;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-heading h2{
+    font-size: 0.9em;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-heading h3{
+    font-size: 0.8em;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-heading h4{
+    font-size: 0.7em;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-heading h5{
+    font-size: 0.6em;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-heading h6{
+    font-size: 0.5em;
+}
+
+/* paragraph */
+.fancyforms-form-field.fancyforms-field-type-paragraph p{
+    margin: 0;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-paragraph p{
+    font-family: var(--fancyforms-paragraph-typo-font-family);
+    font-size: var(--fancyforms-paragraph-typo-font-size, 13px);
+    font-weight: var(--fancyforms-paragraph-typo-font-weight, 400);
+    font-style: var(--fancyforms-paragraph-typo-font-style, normal);
+    letter-spacing: var(--fancyforms-paragraph-typo-letter-spacing, normal);
+    text-transform: var(--fancyforms-paragraph-typo-text-transform, inherit);
+    text-decoration: var(--fancyforms-paragraph-typo-text-decoration, inherit);
+    line-height: var(--fancyforms-paragraph-typo-line-height, 1.2);
+    color: var(--fancyforms-paragraph-typo-font-color, inherit);
+}
+
+.fancyforms-form-default-style .fancyforms-form-field.fancyforms-field-type-paragraph p{
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: inherit;
+    text-decoration: inherit;
+    line-height: 1.2;
+    color: #333;
+}
+
+/* Select */
+.fancyforms-form-field.fancyforms-auto-width select{
+    width: auto;
+}
+
+/* Checkbox/Radio */
+.fancyforms-form-field.fancyforms-field-type-radio .fancyforms-choice label,
+.fancyforms-form-field.fancyforms-field-type-checkbox .fancyforms-choice label{
+    cursor: pointer;
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.fancyforms-form-field input[type="checkbox"],
+.fancyforms-form-field input[type="radio"]{
+    margin: 0;
+}
+
+/* Checkbox/Radio/Image Select Grid */
+.fancyforms-form-field .fancyforms-choice-container{
+    display: grid;
+    gap: 10px 30px;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field .fancyforms-choice-container{
+    font-family: var(--fancyforms-field-typo-font-family);
+    font-size: var(--fancyforms-field-typo-font-size, 14px);
+    font-weight: var(--fancyforms-field-typo-font-weight, 400);
+    font-style: var(--fancyforms-field-typo-font-style, normal);
+    letter-spacing: var(--fancyforms-field-typo-letter-spacing, normal);
+    text-transform: var(--fancyforms-field-typo-text-transform, inherit);
+    text-decoration: var(--fancyforms-field-typo-text-decoration, inherit);
+    line-height: var(--fancyforms-field-typo-line-height, 1.2);
+    color: var(--fancyforms-field-color-normal, #666);
+}
+
+.fancyforms-form-default-style .fancyforms-form-field .fancyforms-choice-container{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: inherit;
+    text-decoration: inherit;
+    line-height: 1.2;
+    color: #666;
+}
+
+.fancyforms-form-field .fancyforms-choice-container .fancyforms-choice > label{
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    text-decoration: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+.fancyforms-form-field.fancyforms-options-layout-inline .fancyforms-choice-container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.fancyforms-form-field.fancyforms-options-layout-1.fancyforms-choice-container{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.fancyforms-form-field.fancyforms-options-layout-2 .fancyforms-choice-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fancyforms-form-field.fancyforms-options-layout-3 .fancyforms-choice-container{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fancyforms-form-field.fancyforms-options-layout-4 .fancyforms-choice-container{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fancyforms-form-field.fancyforms-options-layout-5 .fancyforms-choice-container{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.fancyforms-form-field.fancyforms-options-layout-6 .fancyforms-choice-container{
+    grid-template-columns: repeat(6, 1fr);
+}
+
+
+/* Image Selector */
+.fancyforms-form-field.fancyforms-field-type-image_select .fancyforms-choice-container{
+    gap: 30px;
+}
+
+.fancyforms-form-field.fancyforms-field-type-image_select .fancyforms-field-is-checked {
+    display: none;
+}
+
+.fancyforms-form-field.fancyforms-field-type-image_select .fancyforms-choice input:checked + .fancyforms-field-is-container .fancyforms-field-is-checked {
+    display: flex;
+}
+
+.fancyforms-form-field.fancyforms-field-type-image_select .fancyforms-choice input{
+    display: none;
+}
+
+.fancyforms-form-field.fancyforms-field-type-image_select .fancyforms-choice > label{
+    cursor: pointer;
+}
+
+.fancyforms-form-field .fancyforms-field-is-container{
+    position: relative;
+}
+
+.fancyforms-form-field.fancyforms-field-type-image_select .fancyforms-field-is-image .fancyforms-field-is-checked{
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    font-size: 25px;
+    background: #FFF;
+    border-radius: 50%;
+    padding: 2px;
+    color: green;
+    height: 30px;
+    width: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 9;
+    align-items: center;
+    justify-content: center;
+}
+
+.fancyforms-form-field.fancyforms-field-type-image_select .fancyforms-field-is-image{
+    min-height: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.fancyforms-form-field.fancyforms-field-type-image_select .fancyforms-field-is-image:before{
+    content: "NO IMAGE";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    opacity: 0.4;
+}
+
+.fancyforms-form-field.fancyforms-field-type-image_select .fancyforms-field-is-image img{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.fancyforms-form-field.fancyforms-field-type-image_select .fancyforms-field-is-label{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fancyforms-form-field.fancyforms-options-layout-inline.fancyforms-field-type-image_select .fancyforms-choice-container .fancyforms-choice{
+    width: var(--fancyforms-image-width, 250px);
+}
+
+.fancyforms-form-field.fancyforms-options-layout-1.fancyforms-field-type-image_select .fancyforms-choice-container{
+    grid-template-columns: repeat(1, minmax(auto , var(--fancyforms-image-width, 250px)));
+}
+
+.fancyforms-form-field.fancyforms-options-layout-2.fancyforms-field-type-image_select .fancyforms-choice-container{
+    grid-template-columns: repeat(2, minmax(auto , var(--fancyforms-image-width, 250px)));
+}
+
+.fancyforms-form-field.fancyforms-options-layout-3.fancyforms-field-type-image_select .fancyforms-choice-container{
+    grid-template-columns: repeat(3, minmax(auto , var(--fancyforms-image-width, 250px)));
+}
+
+.fancyforms-form-field.fancyforms-options-layout-4.fancyforms-field-type-image_select .fancyforms-choice-container{
+    grid-template-columns: repeat(4, minmax(auto , var(--fancyforms-image-width, 250px)));
+}
+
+.fancyforms-form-field.fancyforms-options-layout-5.fancyforms-field-type-image_select .fancyforms-choice-container{
+    grid-template-columns: repeat(5, minmax(auto , var(--fancyforms-image-width, 250px)));
+}
+
+.fancyforms-form-field.fancyforms-options-layout-6.fancyforms-field-type-image_select .fancyforms-choice-container{
+    grid-template-columns: repeat(6, minmax(auto , var(--fancyforms-image-width, 250px)));
+}
+
+/* Image */
+.fancyforms-form-field.fancyforms-field-type-image .fancyforms-field-container{
+    width: 100%;
+}
+
+.fancyforms-form-field.fancyforms-field-type-image .fancyforms-field-content{
+    flex-grow: 1;
+    max-width: var(--fancyforms-width);
+}
+
+.fancyforms-form-field.fancyforms-field-type-image .fancyforms-no-image-field{
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.4;
+}
+
+/* Time */
+.fancyforms-form-field.fancyforms-field-type-time .fancyforms-flex-container{
+    display: flex;
+    gap: 10px;
+}
+
+.fancyforms-form-field.fancyforms-field-type-time .fancyforms-flex-container select{
+    flex: 0 0 80px;
+    width: 80px;
+}
+
+/* Star */
+.fancyforms-form-field.fancyforms-field-type-star .fancyforms-choice-container{
+    display: block !important;
+    font-size: 25px;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-star .fancyforms-choice-container{
+    font-size: var(--fancyforms-star-size, 25px);
+}
+
+.fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group{
+    gap: 0.4em;
+}
+
+.fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group .fancyforms-star-rating {
+    cursor: pointer;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group .fancyforms-star-rating {
+    font-size: var(--fancyforms-star-size, 25px);
+}
+
+.fancyforms-form-default-style .fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group .fancyforms-star-rating {
+    font-size: 25px;
+}
+
+.fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group input {
+    display: none;
+}
+
+.fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group .fancyforms-star-rating.fancyforms-star-checked .mdi-star-outline{
+    color: #ffaa4a;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group .fancyforms-star-rating.fancyforms-star-checked .mdi-star-outline{
+    color: var(--fancyforms-star-color-active, #ffaa4a);
+}
+
+.fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group .fancyforms-star-rating.fancyforms-star-hovered .mdi-star-outline:before,
+.fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group .fancyforms-star-rating.fancyforms-star-checked .mdi-star-outline:before{
+    content: "\F04CE";
+}
+
+.fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group .fancyforms-star-rating.fancyforms-star-non-hovered .mdi-star-outline:before{
+    content: "\F04D2";
+}
+
+.fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group .fancyforms-star-rating .mdi-star-outline,
+.fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group .fancyforms-star-rating.fancyforms-star-non-hovered .mdi-star-outline{
+    color: #333;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group .fancyforms-star-rating .mdi-star-outline,
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-star .fancyforms-star-group .fancyforms-star-rating.fancyforms-star-non-hovered .mdi-star-outline{
+    color: var(--fancyforms-star-color, #333);
+}
+
+/* Quantity */
+.fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input{
+    display: flex;
+    font-size: 14px;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input{
+    font-size: var(--fancyforms-field-typo-font-size, 14px);
+}
+
+.fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input input{
+    -moz-appearance: textfield;
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+    display: flex;
+    text-align: center;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input input{
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+}
+
+.fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input input::-webkit-outer-spin-button,
+.fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input span{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    color: #CCC;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input span{
+    width: 3.5em;
+    color: var(--fancyforms-field-border-color-normal, #CCC);
+}
+
+.fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input span:before{
+    font-size: 0.9em;
+}
+
+.fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input .mdi-minus{
+    margin-right: -60px;
+    border-right: 1px solid #EEE;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input .mdi-minus{
+    margin-right: -3.5em;
+    border-right: var(--fancyforms-field-border-right, 1px) solid var(--fancyforms-field-border-color-normal, #CCC);
+}
+
+.fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input .mdi-plus{
+    margin-left: -60px;
+    border-left: 1px solid #EEE;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-spinner .fancyforms-quantity-input .mdi-plus{
+    margin-left: -3.5em;
+    border-left: var(--fancyforms-field-border-right, 1px) solid var(--fancyforms-field-border-color-normal, #CCC);
+}
+
+/* Divider */
+.fancyforms-form-field.fancyforms-field-type-separator .fancyforms-field-container{
+    width: 100%;
+}
+
+.fancyforms-form-field.fancyforms-field-type-separator .fancyforms-field-content{
+    max-width: var(--fancyforms-width);
+}
+
+.fancyforms-form-field.fancyforms-field-type-separator .fancyforms-separator-border{
+    border-color: #333;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-separator .fancyforms-separator-border{
+    border-color: var(--fancyforms-divider-color, #000);
+}
+
+/* HTML */
+.fancyforms-form-field.fancyforms-field-type-html .fancyforms-field-container{
+    width: 100%;
+}
+
+.fancyforms-form-field.fancyforms-field-type-html .fancyforms-field-content {
+    max-width: var(--fancyforms-width);
+}
+
+/* Paragrah */
+.fancyforms-form-field.fancyforms-field-type-paragraph .fancyforms-field-container{
+    width: 100%;
+}
+
+.fancyforms-form-field.fancyforms-field-type-paragraph .fancyforms-field-content {
+    max-width: var(--fancyforms-width);
+}
+
+/* Heading */
+.fancyforms-form-field.fancyforms-field-type-heading .fancyforms-field-container{
+    width: 100%;
+}
+
+.fancyforms-form-field.fancyforms-field-type-heading .fancyforms-field-content {
+    max-width: var(--fancyforms-width);
+}
+
+/* Range Slider */
+.fancyforms-form-field.fancyforms-field-type-range_slider .fancyforms-range-slider-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fancyforms-form-field.fancyforms-field-type-range_slider .fancyforms-range-slider-wrap .fancyforms-range-slider {
+    position: relative;
+    flex-grow: 1;
+    height: 4px;
+    margin: 12px 0;
+    background: rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-range_slider .fancyforms-range-slider-wrap .fancyforms-range-slider {
+    height: var(--fancyforms-range-height, 4px);
+    background: var(--fancyforms-range-color, rgba(0, 0, 0, 0.15));
+}
+
+.fancyforms-form-field.fancyforms-field-type-range_slider .fancyforms-range-slider-wrap .fancyforms-range-slider .ui-slider-range {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: #13a1dc;
+    border-radius: 5px;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-range_slider .fancyforms-range-slider-wrap .fancyforms-range-slider .ui-slider-range {
+    background: var(--fancyforms-range-color-active, #13a1dc);
+}
+
+.fancyforms-form-field.fancyforms-field-type-range_slider .fancyforms-range-slider-wrap .fancyforms-range-slider .ui-slider-handle {
+    height: 16px;
+    width: 16px;
+    background: #fff;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin: 0 0 0 -8px;
+    transform: translateY(-50%);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.fancyforms-form-custom-style .fancyforms-form-field.fancyforms-field-type-range_slider .fancyforms-range-slider-wrap .fancyforms-range-slider .ui-slider-handle {
+    height: var(--fancyforms-range-handle-size, 16px);
+    width: var(--fancyforms-range-handle-size, 16px);
+    background: var(--fancyforms-range-handle-color, #fff);
+    margin: 0 0 0 calc(var(--fancyforms-range-handle-size, 8px)/2 * -1);
+}
+
+.fancyforms-form-field.fancyforms-field-type-range_slider .fancyforms-range-slider-wrap .fancyforms-range-slider + .fancyforms-range-input-selector {
+    margin-left: 10px;
+    width: 80px;
+    text-align: center;
+}
+
+.fancyforms-form-field.fancyforms-field-type-range_slider .fancyforms-typography-line-height-field .fancyforms-range-slider + .fancyforms-range-input-selector{
+    margin-right: 20px
+}
+
+/* Submit Button */
+.fancyforms-submit-wrap{
+    display: flex;
+}
+
+.fancyforms-submit-btn-align-center.fancyforms-submit-wrap{
+    justify-content: center;
+}
+
+.fancyforms-submit-btn-align-right.fancyforms-submit-wrap{
+    justify-content: flex-end;
+}
+
+.fancyforms-submit-button{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.fancyforms-submit-button.fancyforms-button-loading:after{
+    content: "";
+    width:1em;
+    height:1em;
+    border-radius:50%;
+    border:2px solid;
+    border-right-color: transparent;
+    animation:fancyforms-spin 0.4s infinite linear;
+}
+
+@keyframes fancyforms-spin {
+    to{transform: rotate(1turn)}
+}
+
+/* Form Success Message */
+.fancyforms-success-msg{
+    display: block;
+    background: #4BB543;
+    color: #FFF;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 1em;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.fancyforms-failed-msg{
+    display: block;
+    background: #ff3333;
+    color: #FFF;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 1em;
+    border-radius: 3px;
+    text-align: center;
+}
+
+/***********/
+body.fancyforms_preview_page .fancyforms-form-preview{
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+
+
+/* Date Picker Default Styles */
+.ui-datepicker {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border: 1px solid #dcdcde;
+    border-top: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    min-width: 17em;
+    width: auto !important;
+    z-index: 999999 !important;
+}
+.ui-datepicker * {
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    border-radius: 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.ui-datepicker .ui-datepicker-group {
+    float: left;
+}
+.ui-datepicker table {
+    font-size: 13px;
+    margin: 0;
+    border: none;
+    border-collapse: collapse;
+}
+.ui-datepicker .ui-widget-header,
+.ui-datepicker .ui-datepicker-header {
+    background-image: none;
+    border: none;
+    color: #fff;
+    font-weight: normal;
+}
+.ui-datepicker .ui-datepicker-header .ui-state-hover {
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-title {
+    margin: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    position: relative;
+    top: 0;
+    height: 34px;
+    width: 34px;
+}
+.ui-datepicker .ui-state-hover.ui-datepicker-prev,
+.ui-datepicker .ui-state-hover.ui-datepicker-next {
+    border: none;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-prev-hover {
+    left: 0;
+}
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-next-hover {
+    right: 0;
+}
+.ui-datepicker .ui-datepicker-prev {
+    float: left;
+}
+.ui-datepicker .ui-datepicker-prev:before {
+    content: "\f341";
+}
+.ui-datepicker .ui-datepicker-next {
+    float: right;
+}
+.ui-datepicker .ui-datepicker-next:before {
+    content: "\f345";
+}
+.ui-datepicker .ui-datepicker-next span,
+.ui-datepicker .ui-datepicker-prev span {
+    display: none;
+}
+.ui-datepicker .ui-datepicker-next.ui-state-disabled,
+.ui-datepicker .ui-datepicker-prev.ui-state-disabled {
+    visibility: hidden;
+}
+.ui-datepicker .ui-datepicker-next:not(.ui-state-disabled):before,
+.ui-datepicker .ui-datepicker-prev:not(.ui-state-disabled):before {
+    font: normal 20px/34px "dashicons";
+    padding-left: 7px;
+    color: #fff;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 34px;
+    height: 34px;
+}
+.ui-datepicker .ui-datepicker-prev-hover:before,
+.ui-datepicker .ui-datepicker-next-hover:before {
+    opacity: 0.7;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    width: 33%;
+}
+.ui-datepicker thead {
+    color: #fff;
+    font-weight: 600;
+}
+.ui-datepicker th {
+    padding: 10px;
+}
+.ui-datepicker td {
+    padding: 0;
+    border: 1px solid #f0f0f1;
+}
+.ui-datepicker td.ui-datepicker-other-month {
+    border: transparent;
+}
+.ui-datepicker tr:first-of-type td {
+    border-top: 1px solid #f0f0f1;
+}
+.ui-datepicker td.ui-datepicker-week-end {
+    background-color: #f6f7f7;
+}
+.ui-datepicker td.ui-datepicker-today {
+    background-color: #f5e6ab;
+}
+.ui-datepicker td.ui-datepicker-current-day {
+    background: #b8e6bf;
+}
+.ui-datepicker td.ui-state-disabled {
+    cursor: default;
+    opacity: 0.2;
+}
+.ui-datepicker td.ui-state-disabled .ui-state-default {
+    background: #dcdcde;
+    cursor: default;
+}
+.ui-datepicker td .ui-state-default {
+    background: transparent;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    display: block;
+    padding: 5px 10px;
+    font-weight: normal;
+    color: #3c434a;
+}
+.ui-datepicker td .ui-state-default.ui-priority-secondary {
+    opacity: 0.3;
+}
+.ui-datepicker td .ui-state-default.ui-priority-secondary.ui-state-hover {
+    opacity: 1;
+}
+/* WordPress Color Schemes */
+/* Default/Unknown */
+.ui-datepicker .ui-widget-header,
+.ui-datepicker .ui-datepicker-header {
+    background: #2271b1;
+}
+.ui-datepicker thead {
+    background: #2c3338;
+}
+.ui-datepicker td .ui-state-hover {
+    background: #2271b1;
+    color: #fff;
+}
+/* Fresh */
+body.admin-color-fresh .ui-datepicker .ui-widget-header,
+body.admin-color-fresh .ui-datepicker .ui-datepicker-header {
+    background: #2271b1;
+}
+body.admin-color-fresh .ui-datepicker thead {
+    background: #2c3338;
+}
+body.admin-color-fresh .ui-datepicker td .ui-state-hover {
+    background: #2271b1;
+}
+/* Blue */
+body.admin-color-blue .ui-datepicker .ui-widget-header,
+body.admin-color-blue .ui-datepicker .ui-datepicker-header {
+    background: #096484;
+}
+body.admin-color-blue .ui-datepicker thead {
+    background: #4796b3;
+}
+body.admin-color-blue .ui-datepicker td .ui-state-hover {
+    background: #096484;
+}
+/* Coffee */
+body.admin-color-coffee .ui-datepicker .ui-widget-header,
+body.admin-color-coffee .ui-datepicker .ui-datepicker-header {
+    background: #59524c;
+}
+body.admin-color-coffee .ui-datepicker thead {
+    background: #46403c;
+}
+body.admin-color-coffee .ui-datepicker td .ui-state-hover {
+    background: #c7a589;
+}
+/* Ectoplasm */
+body.admin-color-ectoplasm .ui-datepicker .ui-widget-header,
+body.admin-color-ectoplasm .ui-datepicker .ui-datepicker-header {
+    background: #523f6d;
+}
+body.admin-color-ectoplasm .ui-datepicker thead {
+    background: #413256;
+}
+body.admin-color-ectoplasm .ui-datepicker td .ui-state-hover {
+    background: #a3b745;
+}
+/* Midnight */
+body.admin-color-midnight .ui-datepicker .ui-widget-header,
+body.admin-color-midnight .ui-datepicker .ui-datepicker-header {
+    background: #363b3f;
+}
+body.admin-color-midnight .ui-datepicker thead {
+    background: #26292c;
+}
+body.admin-color-midnight .ui-datepicker td .ui-state-hover {
+    background: #e14d43;
+}
+/* Modern */
+body.admin-color-modern .ui-datepicker .ui-widget-header,
+body.admin-color-modern .ui-datepicker .ui-datepicker-header {
+    background: #3858e9;
+}
+body.admin-color-modern .ui-datepicker thead {
+    background: #26292c;
+}
+body.admin-color-modern .ui-datepicker td .ui-state-hover {
+    background: #3858e9;
+}
+/* Ocean */
+body.admin-color-ocean .ui-datepicker .ui-widget-header,
+body.admin-color-ocean .ui-datepicker .ui-datepicker-header {
+    background: #738e96;
+}
+body.admin-color-ocean .ui-datepicker thead {
+    background: #627c83;
+}
+body.admin-color-ocean .ui-datepicker td .ui-state-hover {
+    background: #9ebaa0;
+}
+/* Sunrise */
+body.admin-color-sunrise .ui-datepicker .ui-widget-header,
+body.admin-color-sunrise .ui-datepicker .ui-datepicker-header {
+    background: #e65054;
+}
+body.admin-color-sunrise .ui-datepicker thead {
+    background: #b32d2e;
+}
+body.admin-color-sunrise .ui-datepicker td .ui-state-hover {
+    background: #dd823b;
+}
+/* Light */
+body.admin-color-light .ui-datepicker .ui-widget-header,
+body.admin-color-light .ui-datepicker .ui-datepicker-header {
+    background: #8c8f94;
+}
+body.admin-color-light .ui-datepicker thead {
+    background: #50575e;
+}
+body.admin-color-light .ui-datepicker td .ui-state-hover {
+    background: #04a4cc;
+}
+/* bbPress Color Schemes */
+/* Evergreen */
+body.admin-color-bbp-evergreen .ui-datepicker .ui-widget-header,
+body.admin-color-bbp-evergreen .ui-datepicker .ui-datepicker-header {
+    background: #56b274;
+}
+body.admin-color-bbp-evergreen .ui-datepicker thead {
+    background: #36533f;
+}
+body.admin-color-bbp-evergreen .ui-datepicker td .ui-state-hover {
+    background: #446950;
+}
+/* Mint */
+body.admin-color-bbp-mint .ui-datepicker .ui-widget-header,
+body.admin-color-bbp-mint .ui-datepicker .ui-datepicker-header {
+    background: #4ca26a;
+}
+body.admin-color-bbp-mint .ui-datepicker thead {
+    background: #4f6d59;
+}
+body.admin-color-bbp-mint .ui-datepicker td .ui-state-hover {
+    background: #5fb37c;
+}
+/* Parent Input Alignment */
+body.wp-admin:not(.rtl) .ui-datepicker {
+    margin-left: -1px;
+}
+body.wp-admin.rtl .ui-datepicker {
+    margin-right: -1px;
+}

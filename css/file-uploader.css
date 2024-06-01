@@ -1,0 +1,144 @@
+.fancyforms-file-uploader .qq-uploader {
+    position: relative;
+    width: 100%;
+}
+
+.fancyforms-file-uploader .qq-upload-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #EEE;
+    color: #333;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.fancyforms-form-custom-style .fancyforms-file-uploader .qq-upload-button {
+    border-top: var(--fancyforms-upload-border-top, 1px) solid var(--fancyforms-upload-border-color-normal, #CCC);
+    border-right: var(--fancyforms-upload-border-right, 1px) solid var(--fancyforms-upload-border-color-normal, #CCC);
+    border-bottom: var(--fancyforms-upload-border-bottom, 1px) solid var(--fancyforms-upload-border-color-normal, #CCC);
+    border-left: var(--fancyforms-upload-border-left, 1px) solid var(--fancyforms-upload-border-color-normal, #CCC);
+    border-radius: var(--fancyforms-upload-border-radius-top, 3px) var(--fancyforms-upload-border-radius-right, 3px) var(--fancyforms-upload-border-radius-bottom, 3px) var(--fancyforms-upload-border-radius-left, 3px);
+    padding: var(--fancyforms-upload-padding-top, 10px) var(--fancyforms-upload-padding-right, 20px) var(--fancyforms-upload-padding-bottom, 10px) var(--fancyforms-upload-padding-left, 20px);  
+    color: var(--fancyforms-upload-color-normal, #666);
+    background-color: var(--fancyforms-upload-bg-color-normal, #EEE);
+    box-shadow: var(--fancyforms-upload-shadow-normal-x, 0) var(--fancyforms-upload-shadow-normal-y, 0) var(--fancyforms-upload-shadow-normal-blur, 0) var(--fancyforms-upload-shadow-normal-spread, 0) var(--fancyforms-upload-shadow-normal-color, transparent);
+}
+
+.fancyforms-form-custom-style .fancyforms-file-uploader .qq-upload-button-hover,
+.fancyforms-form-custom-style .fancyforms-file-uploader .qq-upload-button:hover {
+    border-top: var(--fancyforms-upload-border-top, 1px) solid var(--fancyforms-upload-border-color-hover, var(--fancyforms-upload-border-color-normal, #CCC));
+    border-right: var(--fancyforms-upload-border-right, 1px) solid var(--fancyforms-upload-border-color-hover, var(--fancyforms-upload-border-color-normal, #CCC));
+    border-bottom: var(--fancyforms-upload-border-bottom, 1px) solid var(--fancyforms-upload-border-color-hover, var(--fancyforms-upload-border-color-normal, #CCC));
+    border-left: var(--fancyforms-upload-border-left, 1px) solid var(--fancyforms-upload-border-color-hover, var(--fancyforms-upload-border-color-normal, #CCC));
+    color: var(--fancyforms-upload-color-hover,var(--fancyforms-upload-color-normal, inherit));
+    background-color: var(--fancyforms-upload-bg-color-hover, var(--fancyforms-upload-bg-color-normal, #EEE));
+    box-shadow: var(--fancyforms-upload-shadow-hover-x, var(--fancyforms-upload-shadow-normal-x, 0)) var(--fancyforms-upload-shadow-hover-y, var(--fancyforms-upload-shadow-normal-y, 0)) var(--fancyforms-upload-shadow-hover-blur, var(--fancyforms-upload-shadow-normal-blur, 0)) var(--fancyforms-upload-shadow-hover-spread, var(--fancyforms-upload-shadow-normal-spread, 0)) var(--fancyforms-upload-shadow-hover-color, var(--fancyforms-upload-shadow-normal-color, transparent));
+}
+
+.fancyforms-file-uploader .qq-upload-button input{
+    height: 100% !important;
+    width: 100% !important;
+    font-size: 0 !important;
+}
+
+.fancyforms-file-uploader .qq-upload-drop-area{
+    width: 100%;
+    max-width: 300px;
+    min-height: 80px;
+    z-index: 2;
+    background: none;
+    text-align: center;
+    border: 2px dashed #EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fancyforms-file-uploader .qq-upload-drop-area-active {
+    background: #EEE;
+}
+
+.fancyforms-file-uploader .qq-upload-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fancyforms-file-uploader .qq-upload-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 8px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1;
+    background-color: #FFF0BD;
+}
+
+.fancyforms-file-uploader .qq-progress-bar{
+    display: none;
+}
+
+.fancyforms-file-uploader .qq-upload-spinner {
+    display: inline-block;
+    background: url("loading.gif");
+    width: 15px;
+    height: 15px;
+    vertical-align: text-bottom;
+}
+
+.fancyforms-file-uploader .qq-upload-size, 
+.fancyforms-file-uploader .qq-upload-cancel {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.fancyforms-file-uploader .qq-upload-failed-text {
+    display: none;
+}
+
+.fancyforms-file-uploader .qq-upload-fail .qq-upload-failed-text {
+    display: inline;
+}
+
+.fancyforms-file-uploader .qq-upload-list li.qq-upload-success {
+    background-color: #5DA30C;
+    color: #FFFFFF;
+}
+
+.fancyforms-file-uploader .qq-upload-list li.qq-upload-fail {
+    background-color: #D60000;
+    color: #FFFFFF;
+}
+
+.fancyforms-prev-holder{
+    border: 1px solid #EEE;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.fancyforms-prev-holder img{
+    max-width: 200px !important;
+}
+
+.fancyforms-prev-holder .fancyforms-prev-name{
+    display: block;
+    margin: 6px 0;
+    font-size: 12px;
+}
+
+.fancyforms-preview-remove{
+    background: #FF0000;
+    font-size: 12px;
+    cursor: pointer;
+    color: #FFF;
+    padding: 6px 10px;
+    line-height: 1;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+.fancyforms-preview-remove:hover{
+    background: #000;
+}
